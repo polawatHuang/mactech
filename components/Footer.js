@@ -77,7 +77,7 @@ export default function Footer() {
 
               <div className="flex items-center gap-3">
                 <MapPinIcon className="h-5 w-5 text-[#d4a63c]" />
-                จังหวัดสมุทรปราการ
+                219/2 หมู่ 12 ตำบลกระสัง อำเภอเมืองบุรีรัมย์ จังหวัดบุรีรัมย์ 31000
               </div>
             </div>
           </div>

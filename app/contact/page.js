@@ -105,7 +105,7 @@ export default function ContactPage() {
           <div className="mt-8 space-y-7">
             <ContactItem icon={<PhoneIcon />} title="โทรศัพท์" value="065-265-5539" />
             <ContactItem icon={<EnvelopeIcon />} title="อีเมล" value="mactech.fence@gmail.com" />
-            <ContactItem icon={<MapPinIcon />} title="ที่อยู่บริษัท" value="จังหวัดสมุทรปราการ ให้บริการจัดส่งทั่วประเทศ" />
+            <ContactItem icon={<MapPinIcon />} title="ที่อยู่บริษัท" value="219/2 หมู่ 12 ตำบลกระสัง อำเภอเมืองบุรีรัมย์ จังหวัดบุรีรัมย์ 31000" />
             <ContactItem icon={<ClockIcon />} title="เวลาทำการ" value="จันทร์ - เสาร์ 08:30 - 17:30 น." />
           </div>
         </div>
@@ -166,10 +166,10 @@ export default function ContactPage() {
             <MapPinIcon className="h-12 w-12 text-[#d4a63c]" />
             <h3 className="mt-4 text-xl font-extrabold">MACTECH STEEL FENCE SYSTEM</h3>
             <p className="mt-4 leading-7 text-white/70">
-              จังหวัดสมุทรปราการ ให้บริการจัดส่งทั่วประเทศ
+              219/2 หมู่ 12 ตำบลกระสัง อำเภอเมืองบุรีรัมย์ จังหวัดบุรีรัมย์ 31000
             </p>
             <a
-              href="https://maps.google.com"
+              href="https://www.google.com/maps?q=219/2%20หมู่%2012%20ตำบลกระสัง%20อำเภอเมืองบุรีรัมย์%20จังหวัดบุรีรัมย์%2031000"
               target="_blank"
               className="mt-7 inline-flex h-12 items-center justify-center border border-[#d4a63c] px-6 font-bold text-[#d4a63c] hover:bg-[#d4a63c] hover:text-black"
             >
@@ -180,7 +180,7 @@ export default function ContactPage() {
           <div className="min-h-[280px] border border-white/15 bg-[#111]">
             <iframe
               title="MACTECH Map"
-              src="https://www.google.com/maps?q=Samut%20Prakan%20Thailand&output=embed"
+              src="https://www.google.com/maps?q=219/2%20หมู่%2012%20ตำบลกระสัง%20อำเภอเมืองบุรีรัมย์%20จังหวัดบุรีรัมย์%2031000&output=embed"
               className="h-full min-h-[280px] w-full grayscale"
               loading="lazy"
             />
