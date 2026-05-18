@@ -9,7 +9,7 @@ import LogoImg from "../public/images/logo.webp";
 
 const mainMenus = [
   { name: "หน้าแรก", href: "/" },
-  { name: "สินค้า", href: "#products" },
+  { name: "สินค้า", href: "/products" },
   { name: "บริการให้คำปรึกษา", href: "/consulting" },
 //   { name: "ผลงานของเรา", href: "/projects" },
   { name: "เกี่ยวกับเรา", href: "/about" },
@@ -17,12 +17,12 @@ const mainMenus = [
 ];
 
 const products = [
-  { name: "แผงรั้วกัลวาไนซ์", href: "/products/galvanized" },
-  { name: "แผงรั้ว เคลือบสีดำ", href: "/products/pe-black" },
-  { name: "แผงรั้ว เคลือบสีเขียว", href: "/products/pe-green" },
-  { name: "แผงรั้ว แบบประหยัด", href: "/products/economy" },
-  { name: "เสา / อุปกรณ์", href: "/products/accessories" },
-  { name: "ชุดประตูรั้ว", href: "/products/gate" },
+  { name: "แผงรั้วกัลวาไนซ์", href: "/products/galvanized-fence" },
+  { name: "แผงรั้ว เคลือบสีดำ", href: "/products/black-pe-fence" },
+  { name: "แผงรั้ว เคลือบสีเขียว", href: "/products/green-pe-fence" },
+  // { name: "แผงรั้ว แบบประหยัด", href: "/products/economy" },
+  // { name: "เสา / อุปกรณ์", href: "/products/accessories" },
+  // { name: "ชุดประตูรั้ว", href: "/products/gate" },
 ];
 
 export default function Footer() {
@@ -85,20 +85,8 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="container-main px-6 md:px-14 flex flex-col gap-4 py-5 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
+        <div className="container-main px-6 md:px-14 flex flex-col gap-4 py-5 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-center">
           <p>© {new Date().getFullYear()} MACTECH STEEL FENCE SYSTEM. All Rights Reserved.</p>
-
-          <div className="flex items-center gap-4">
-            <a className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white/55">
-              f
-            </a>
-            <a className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white/55">
-              LINE
-            </a>
-            <a className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white/55">
-              ▶
-            </a>
-          </div>
         </div>
       </div>
     </footer>

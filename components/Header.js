@@ -15,24 +15,24 @@ import LogoImg from "@/public/images/logo.webp";
 const products = [
   {
     name: "แผงรั้วสำเร็จรูปกัลวาไนซ์",
-    href: "/products/galvanized",
+    href: "/products/galvanized-fence",
     desc: "แข็งแรง ทนสนิม สำหรับงานมาตรฐาน",
   },
   {
     name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE ดำ",
-    href: "/products/pe-black",
+    href: "/products/black-pe-fence",
     desc: "โทนดำพรีเมียม เหมาะกับบ้านและโครงการ",
   },
   {
     name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE เขียว",
-    href: "/products/pe-green",
+    href: "/products/green-pe-fence",
     desc: "สีเขียวกลมกลืน เหมาะกับสวนและพื้นที่ภายนอก",
   },
 ];
 
 const menus = [
   { name: "หน้าแรก", href: "/" },
-  { name: "บริการให้คำปรึกษา", href: "/services/consulting" },
+  { name: "บริการให้คำปรึกษา", href: "/consulting" },
   { name: "เกี่ยวกับเรา", href: "/about" },
   { name: "ติดต่อเรา", href: "/contact" },
 ];
