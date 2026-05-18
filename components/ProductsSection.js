@@ -39,7 +39,7 @@ const products = [
 
 export default function ProductsSection() {
   return (
-    <section className="bg-[#070707] px-6 md:px-14 py-8 sm:py-10 lg:py-12">
+    <section id="products" className="bg-[#070707] px-6 md:px-14 py-8 sm:py-10 lg:py-12">
       <div className="container-main">
         <div className="mb-7 border-b border-[#d4a63c]/30 pb-3">
           <h2 className="text-2xl font-extrabold text-white sm:text-3xl">

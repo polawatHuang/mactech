@@ -9,9 +9,9 @@ import LogoImg from "../public/images/logo.webp";
 
 const mainMenus = [
   { name: "หน้าแรก", href: "/" },
-  { name: "สินค้า", href: "/products" },
-  { name: "บริการให้คำปรึกษา", href: "/services/consulting" },
-  { name: "ผลงานของเรา", href: "/projects" },
+  { name: "สินค้า", href: "#products" },
+  { name: "บริการให้คำปรึกษา", href: "/consulting" },
+//   { name: "ผลงานของเรา", href: "/projects" },
   { name: "เกี่ยวกับเรา", href: "/about" },
   { name: "ติดต่อเรา", href: "/contact" },
 ];
@@ -59,10 +59,12 @@ export default function Footer() {
               </a>
 
               <div className="flex items-center gap-3">
+                <a href="https://line.me/ti/p/~mack.656" target="_blank" rel="noreferrer" className="flex items-center gap-3">
                 <span className="flex h-5 w-5 text-[5px] items-center justify-center rounded bg-[#00c300] font-black text-white">
                   LINE
                 </span>
                 mack.656
+                </a>
               </div>
 
               <a

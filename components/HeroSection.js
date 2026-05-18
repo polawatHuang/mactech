@@ -118,7 +118,7 @@ export default function HeroSection() {
             {/* Buttons */}
             <div className="flex flex-col gap-4 sm:flex-row">
               <Link
-                href="/products"
+                href="#products"
                 className="flex h-[54px] w-full items-center justify-center border border-[#d4a63c] bg-[#d4a63c] px-8 text-[15px] font-bold text-white transition hover:bg-[#bf912e] sm:w-[180px]"
               >
                 ดูสินค้า
