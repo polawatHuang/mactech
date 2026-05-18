@@ -8,17 +8,17 @@ const products = [
   {
     title: "แผงรั้วกัลวาไนซ์",
     image: WhiteWallImg,
-    href: "/products/galvanized",
+    href: "/products/galvanized-fence",
   },
   {
     title: "แผงรั้ว เคลือบสีดำ",
     image: BlackWallImg,
-    href: "/products/pe-black",
+    href: "/products/black-pe-fence",
   },
   {
     title: "แผงรั้ว เคลือบสีเขียว",
     image: GreenWallImg,
-    href: "/products/pe-green",
+    href: "/products/green-pe-fence",
   },
 //   {
 //     title: "แผงรั้ว แบบประหยัด",
