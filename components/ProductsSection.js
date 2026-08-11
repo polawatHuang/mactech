@@ -1,4 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useRef } from "react";
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+} from "@heroicons/react/24/outline";
 import WhiteWallImg from "../public/images/wall-white.png";
 import GreenWallImg from "../public/images/wall-green.png";
 import BlackWallImg from "../public/images/wall-black.png";
@@ -20,6 +27,26 @@ const products = [
     image: GreenWallImg,
     href: "/products/green-pe-fence",
   },
+  {
+    title: "ตาข่ายกรงไก่แสตนเลส",
+    image: WhiteWallImg,
+    href: "/products/stainless-chicken-wire-mesh",
+  },
+  {
+    title: "ตาข่ายกรงไก่ชุบเย็น",
+    image: WhiteWallImg,
+    href: "/products/galvanized-chicken-wire-mesh",
+  },
+  {
+    title: "ตาข่ายกรงไก่ PVC",
+    image: WhiteWallImg,
+    href: "/products/pvc-chicken-wire-mesh",
+  },
+  {
+    title: "ลวดหนาม",
+    image: WhiteWallImg,
+    href: "/products/barbed-wire",
+  },
 //   {
 //     title: "แผงรั้ว แบบประหยัด",
 //     image: "/images/product-economy.jpg",
@@ -37,7 +64,47 @@ const products = [
 //   },
 ];
 
+const AUTOPLAY_MS = 3000;
+
+function slideTrack(track, direction) {
+  const card = track.firstElementChild;
+  if (!card) return;
+
+  const gap = parseFloat(getComputedStyle(track).columnGap || "0");
+  const step = card.getBoundingClientRect().width + gap;
+
+  if (direction > 0 && track.scrollLeft + track.clientWidth >= track.scrollWidth - 4) {
+    track.scrollTo({ left: 0, behavior: "smooth" });
+    return;
+  }
+
+  if (direction < 0 && track.scrollLeft <= 4) {
+    track.scrollTo({
+      left: track.scrollWidth - track.clientWidth,
+      behavior: "smooth",
+    });
+    return;
+  }
+
+  track.scrollBy({ left: direction * step, behavior: "smooth" });
+}
+
 export default function ProductsSection() {
+  const trackRef = useRef(null);
+  const pausedRef = useRef(false);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const timer = setInterval(() => {
+      if (pausedRef.current) return;
+      slideTrack(track, 1);
+    }, AUTOPLAY_MS);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section id="products" className="bg-[#070707] px-6 md:px-14 py-8 sm:py-10 lg:py-12">
       <div className="container-main">
@@ -50,11 +117,35 @@ export default function ProductsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-6">
-          {products.map((item) => (
+        <div className="relative">
+          <button
+            type="button"
+            onClick={() => slideTrack(trackRef.current, -1)}
+            aria-label="สินค้าก่อนหน้า"
+            className="absolute -left-3 top-[calc(50%-1.25rem)] z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center border border-white/20 bg-black/70 text-white transition hover:border-[#d4a63c] hover:text-[#d4a63c] sm:-left-4"
+          >
+            <ChevronLeftIcon className="h-5 w-5" />
+          </button>
+
+          <button
+            type="button"
+            onClick={() => slideTrack(trackRef.current, 1)}
+            aria-label="สินค้าถัดไป"
+            className="absolute -right-3 top-[calc(50%-1.25rem)] z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center border border-white/20 bg-black/70 text-white transition hover:border-[#d4a63c] hover:text-[#d4a63c] sm:-right-4"
+          >
+            <ChevronRightIcon className="h-5 w-5" />
+          </button>
+
+          <div
+            ref={trackRef}
+            onMouseEnter={() => (pausedRef.current = true)}
+            onMouseLeave={() => (pausedRef.current = false)}
+            className="flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-smooth pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          >
+            {products.map((item) => (
             <article
               key={item.title}
-              className="group border border-white/10 bg-[#0b0b0b] p-2 transition duration-300 hover:-translate-y-1 hover:border-[#d4a63c]/60 hover:shadow-[0_18px_50px_rgba(0,0,0,.55)]"
+              className="group w-[calc((100%-0.75rem)/2)] shrink-0 snap-start border border-white/10 bg-[#0b0b0b] p-2 transition duration-300 hover:-translate-y-1 hover:border-[#d4a63c]/60 hover:shadow-[0_18px_50px_rgba(0,0,0,.55)] md:w-[calc((100%-1.5rem)/3)] xl:w-[calc((100%-3.75rem)/6)]"
             >
               <Link href={item.href}>
                 <div className="relative aspect-[4/5] overflow-hidden bg-black">
@@ -79,7 +170,8 @@ export default function ProductsSection() {
                 </div>
               </Link>
             </article>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
