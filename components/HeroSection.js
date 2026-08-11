@@ -54,7 +54,7 @@ export default function HeroSection() {
               <Image
                 src={MLogo}
                 alt="MACTECH"
-                className="h-[72px] w-[72px] object-contain lg:h-[102px] lg:w-[102px]"
+                className="h-[44px] w-[44px] object-contain sm:h-[56px] sm:w-[56px] lg:h-[102px] lg:w-[102px]"
               />
 
               <div>

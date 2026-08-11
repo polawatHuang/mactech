@@ -227,7 +227,13 @@ export default function Header() {
 
         <Dialog.Panel className="fixed right-0 top-0 h-full w-[86%] max-w-sm overflow-y-auto border-l border-[#d4a63c]/25 bg-[#050505] p-5 shadow-2xl">
           <div className="flex items-center justify-between border-b border-white/10 pb-5">
-            <img src="/images/logo.png" alt="MACTECH" className="w-[165px]" />
+            <Image
+              src={LogoImg}
+              alt="MACTECH"
+              width={165}
+              height={35}
+              className="w-[165px]"
+            />
 
             <button
               type="button"
