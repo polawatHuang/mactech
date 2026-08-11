@@ -9,6 +9,11 @@ import {
 import WhiteWallImg from "../public/images/wall-white.png";
 import GreenWallImg from "../public/images/wall-green.png";
 import BlackWallImg from "../public/images/wall-black.png";
+import StainlessMeshImg from "../public/products/ตาข่ายกรงไก่สแตนเลส.jpg";
+import ColdGalvanizedMeshImg from "../public/products/ตาข่ายกรงไก่ชุบเย็น.jpg";
+import HotGalvanizedMeshImg from "../public/products/ตาข่ายกรงไก่ชุบร้อน.jpg";
+import PvcMeshImg from "../public/products/ตาข่ายกรงไก่ PVC.jpg";
+import BarbedWireImg from "../public/products/ลวดหนาม.jpg";
 import Image from "next/image";
 
 const products = [
@@ -29,22 +34,27 @@ const products = [
   },
   {
     title: "ตาข่ายกรงไก่แสตนเลส",
-    image: WhiteWallImg,
+    image: StainlessMeshImg,
     href: "/products/stainless-chicken-wire-mesh",
   },
   {
     title: "ตาข่ายกรงไก่ชุบเย็น",
-    image: WhiteWallImg,
+    image: ColdGalvanizedMeshImg,
     href: "/products/galvanized-chicken-wire-mesh",
   },
   {
+    title: "ตาข่ายกรงไก่ชุบร้อน",
+    image: HotGalvanizedMeshImg,
+    href: "/products/hot-dip-galvanized-chicken-wire-mesh",
+  },
+  {
     title: "ตาข่ายกรงไก่ PVC",
-    image: WhiteWallImg,
+    image: PvcMeshImg,
     href: "/products/pvc-chicken-wire-mesh",
   },
   {
     title: "ลวดหนาม",
-    image: WhiteWallImg,
+    image: BarbedWireImg,
     href: "/products/barbed-wire",
   },
 //   {

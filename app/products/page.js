@@ -5,7 +5,6 @@ import { Listbox } from "@headlessui/react";
 import {
   ChevronDownIcon,
   PhoneIcon,
-  ChevronRightIcon,
 } from "@heroicons/react/24/outline";
 import { useState } from "react";
 
@@ -18,10 +17,7 @@ import { products } from "../../mock/products";
 
 const categories = [
   "สินค้าทั้งหมด",
-  "แผงรั้วเหล็ก",
-  "เสารั้ว",
-  "อุปกรณ์ติดตั้ง",
-  "ชุดประตูรั้ว",
+  ...new Set(products.map((item) => item.category)),
 ];
 
 const sortOptions = [
@@ -33,6 +29,27 @@ const sortOptions = [
 export default function ProductsPage() {
   const [selectedSort, setSelectedSort] =
     useState(sortOptions[0]);
+
+  const [selectedCategory, setSelectedCategory] =
+    useState(categories[0]);
+
+  const categoryProducts =
+    selectedCategory === categories[0]
+      ? products
+      : products.filter(
+          (item) => item.category === selectedCategory
+        );
+
+  const filteredProducts =
+    selectedSort === sortOptions[1]
+      ? [...categoryProducts].sort(
+          (a, b) => a.startingPrice - b.startingPrice
+        )
+      : selectedSort === sortOptions[2]
+      ? [...categoryProducts].sort(
+          (a, b) => b.startingPrice - a.startingPrice
+        )
+      : categoryProducts;
 
   return (
     <main className="min-h-screen bg-[#050505] text-white">
@@ -81,11 +98,12 @@ export default function ProductsPage() {
             </h2>
 
             <div>
-              {categories.map((item, index) => (
+              {categories.map((item) => (
                 <button
                   key={item}
+                  onClick={() => setSelectedCategory(item)}
                   className={`block w-full border-b border-white/10 px-5 py-4 text-left text-sm transition last:border-b-0 ${
-                    index === 0
+                    selectedCategory === item
                       ? "bg-[#d4a63c] font-bold text-black"
                       : "text-white/75 hover:bg-white/5 hover:text-[#d4a63c]"
                   }`}
@@ -135,11 +153,11 @@ export default function ProductsPage() {
           <div className="mb-6 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
             <div>
               <h2 className="text-2xl font-extrabold sm:text-3xl">
-                สินค้าทั้งหมด
+                {selectedCategory}
               </h2>
 
               <p className="mt-2 text-sm text-white/55">
-                พบสินค้า {products.length} รายการ
+                พบสินค้า {filteredProducts.length} รายการ
               </p>
             </div>
 
@@ -172,7 +190,7 @@ export default function ProductsPage() {
 
           {/* PRODUCT GRID */}
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
-            {products.map((item) => (
+            {filteredProducts.map((item) => (
               <Link
                 key={item.id}
                 href={`/products/${item.slug}`}
@@ -213,21 +231,8 @@ export default function ProductsPage() {
 
           {/* PAGINATION */}
           <div className="mt-8 flex justify-center gap-2">
-            {[1].map((page) => (
-              <button
-                key={page}
-                className={`h-11 w-11 border text-sm font-bold ${
-                  page === 1
-                    ? "border-[#d4a63c] text-[#d4a63c]"
-                    : "border-white/10 text-white/60 hover:border-[#d4a63c] hover:text-[#d4a63c]"
-                }`}
-              >
-                {page}
-              </button>
-            ))}
-
-            <button className="flex h-11 w-11 items-center justify-center border border-white/10 text-white/60 hover:border-[#d4a63c] hover:text-[#d4a63c]">
-              <ChevronRightIcon className="h-4 w-4" />
+            <button className="h-11 w-11 border border-[#d4a63c] text-sm font-bold text-[#d4a63c]">
+              1
             </button>
           </div>
         </div>

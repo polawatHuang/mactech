@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import FenceGroupImg from "../public/images/fence-group.webp";
+import FenceGroupImg from "../public/ogimage.png";
 
 export default function QuoteCTASection() {
   return (

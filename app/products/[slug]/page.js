@@ -32,6 +32,10 @@ export default function ProductDetailPage({ params }) {
     (item) => item.slug === resolvedParams.slug
   );
 
+  const isMeshOrWireProduct =
+    product?.category === "ตาข่ายกรงไก่" ||
+    product?.category === "ลวดหนาม";
+
   const [activeImage, setActiveImage] = useState(
     product?.gallery?.[0]
   );
@@ -170,23 +174,29 @@ export default function ProductDetailPage({ params }) {
                 ความสูง
               </p>
 
-              <div className="grid grid-cols-3 gap-3">
-                {product.sizes.map((item) => (
-                  <button
-                    key={item.height}
-                    onClick={() =>
-                      setSelectedHeight(item.height)
-                    }
-                    className={`h-12 border text-sm font-bold transition ${
-                      selectedHeight === item.height
-                        ? "border-[#d4a63c] text-[#d4a63c]"
-                        : "border-white/20 text-white/75 hover:border-[#d4a63c]"
-                    }`}
-                  >
-                    {item.height}
-                  </button>
-                ))}
-              </div>
+              {isMeshOrWireProduct ? (
+                <div className="inline-flex h-12 items-center border border-[#d4a63c]/60 px-5 text-sm font-bold text-white">
+                  -
+                </div>
+              ) : (
+                <div className="grid grid-cols-3 gap-3">
+                  {product.sizes.map((item) => (
+                    <button
+                      key={item.height}
+                      onClick={() =>
+                        setSelectedHeight(item.height)
+                      }
+                      className={`h-12 border text-sm font-bold transition ${
+                        selectedHeight === item.height
+                          ? "border-[#d4a63c] text-[#d4a63c]"
+                          : "border-white/20 text-white/75 hover:border-[#d4a63c]"
+                      }`}
+                    >
+                      {item.height}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* WIDTH */}
@@ -196,7 +206,7 @@ export default function ProductDetailPage({ params }) {
               </p>
 
               <div className="inline-flex h-12 items-center border border-[#d4a63c]/60 px-5 text-sm font-bold text-white">
-                2.40 เมตร/แผง
+                {isMeshOrWireProduct ? "-" : "2.40 เมตร/แผง"}
               </div>
             </div>
 
@@ -279,7 +289,11 @@ export default function ProductDetailPage({ params }) {
       </section>
 
       {/* DETAIL */}
-      <section className="container-main grid gap-1 px-6 py-10 lg:grid-cols-2 lg:px-14">
+      <section
+        className={`container-main grid gap-1 px-6 py-10 lg:px-14 ${
+          isMeshOrWireProduct ? "" : "lg:grid-cols-2"
+        }`}
+      >
         <div className="bg-white p-6 text-black sm:p-8">
           <h2 className="mb-6 text-2xl font-extrabold">
             รายละเอียดสินค้า
@@ -305,32 +319,34 @@ export default function ProductDetailPage({ params }) {
           </table>
         </div>
 
-        <div className="bg-white p-6 text-black sm:p-8">
-          <h2 className="mb-6 text-2xl font-extrabold">
-            ขนาดสินค้า
-          </h2>
+        {!isMeshOrWireProduct && (
+          <div className="bg-white p-6 text-black sm:p-8">
+            <h2 className="mb-6 text-2xl font-extrabold">
+              ขนาดสินค้า
+            </h2>
 
-          <div className="space-y-6">
-            {product.sizes.map((item) => (
-              <div
-                key={item.height}
-                className="grid grid-cols-[110px_1fr] gap-4"
-              >
-                <div className="h-fit bg-black px-3 py-2 text-center text-sm font-bold text-white">
-                  สูง {item.height}
+            <div className="space-y-6">
+              {product.sizes.map((item) => (
+                <div
+                  key={item.height}
+                  className="grid grid-cols-[110px_1fr] gap-4"
+                >
+                  <div className="h-fit bg-black px-3 py-2 text-center text-sm font-bold text-white">
+                    สูง {item.height}
+                  </div>
+
+                  <Image
+                    src={item.image}
+                    alt={item.height}
+                    className="w-full object-contain"
+                    width={900}
+                    height={300}
+                  />
                 </div>
-
-                <Image
-                  src={item.image}
-                  alt={item.height}
-                  className="w-full object-contain"
-                  width={900}
-                  height={300}
-                />
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </section>
 
       {/* RELATED */}

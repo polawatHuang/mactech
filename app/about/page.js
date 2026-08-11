@@ -13,6 +13,15 @@ import {
   TruckIcon,
 } from "@heroicons/react/24/outline";
 
+export const metadata = {
+  title: "เกี่ยวกับเรา | MACTECH",
+  description:
+    "รู้จัก MACTECH ผู้ผลิตและจำหน่ายแผงรั้วเหล็ก ตาข่ายกรงไก่ และลวดหนาม ก่อตั้งปี 2557 ประสบการณ์กว่า 10 ปีในอุตสาหกรรมเหล็ก พร้อมทีมงานมืออาชีพและบริการครบวงจร",
+  alternates: {
+    canonical: "/about",
+  },
+};
+
 const values = [
   {
     title: "คุณภาพมาตรฐาน",

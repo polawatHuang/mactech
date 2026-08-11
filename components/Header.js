@@ -47,6 +47,11 @@ const productCategories = [
         desc: "ผิวเรียบ ป้องกันสนิม ราคาคุ้มค่า",
       },
       {
+        name: "ตาข่ายกรงไก่ชุบร้อน",
+        href: "/products/hot-dip-galvanized-chicken-wire-mesh",
+        desc: "เคลือบสังกะสีหนา ทนสนิมสูงสุด",
+      },
+      {
         name: "ตาข่ายกรงไก่ PVC",
         href: "/products/pvc-chicken-wire-mesh",
         desc: "เคลือบ PVC ทนทาน สวยงาม",

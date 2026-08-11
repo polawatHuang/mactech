@@ -18,6 +18,12 @@ import Bolt from "@/public/images/wall-white.png";
 import PostCap from "@/public/images/wall-white.png";
 import Wrench from "@/public/images/wall-white.png";
 
+import StainlessMeshImg from "@/public/products/ตาข่ายกรงไก่สแตนเลส.jpg";
+import ColdGalvanizedMeshImg from "@/public/products/ตาข่ายกรงไก่ชุบเย็น.jpg";
+import HotGalvanizedMeshImg from "@/public/products/ตาข่ายกรงไก่ชุบร้อน.jpg";
+import PvcMeshImg from "@/public/products/ตาข่ายกรงไก่ PVC.jpg";
+import BarbedWireImg from "@/public/products/ลวดหนาม.jpg";
+
 export const products = [
   {
     id: "galvanized-fence",
@@ -77,7 +83,8 @@ export const products = [
       },
       {
         label: "วัสดุ",
-        value: "เหล็กกล้า ชุบกัลวาไนซ์ (Hot Dip Galvanized)",
+        value:
+          "เหล็กกล้า ชุบสังกะสี (Hot Dip Galvanized) ป้องกันการกัดกร่อน ทนทานต่อการใช้งาน",
       },
       {
         label: "ความสูง",
@@ -102,6 +109,14 @@ export const products = [
       {
         label: "ลวดดัดโค้ง",
         value: "2 ชั้น เพิ่มความแข็งแรง",
+      },
+      {
+        label: "เสาเหล็กกล่อง",
+        value: "ขนาด 50 x 50 มม. หนา 2.3 มม.",
+      },
+      {
+        label: "ฐานเสาเหล็ก",
+        value: "ขนาด 150 x 150 มม. หนา 6 มม.",
       },
       {
         label: "สี",
@@ -163,10 +178,10 @@ export const products = [
     subtitle: "WELDED WIRE MESH FENCE (BLACK PE)",
 
     description:
-      "แผงรั้วเคลือบ PE สีดำ ดีไซน์ทันสมัย เรียบหรู แข็งแรง ป้องกันสนิมและรอยขีดข่วน",
+      "แผงรั้วสำเร็จรูปชุบกัลวาไนซ์แล้วเคลือบผิว PE สีดำด้าน ป้องกันสนิมสองชั้น ดีไซน์ทันสมัย เรียบหรู เข้ากับบ้านและอาคารทุกสไตล์ ลวดดัดโค้ง 2 ชั้นเพิ่มความแข็งแรง พร้อมเสาเหล็กกล่องและฐานเสามาตรฐาน ติดตั้งง่าย",
 
     shortDescription:
-      "สวยงาม เรียบหรู ป้องกันสนิม",
+      "สวยงาม เรียบหรู ป้องกันสนิมสองชั้น",
 
     startingPrice: 1450,
 
@@ -191,6 +206,11 @@ export const products = [
         width: "2.40 เมตร/แผง",
         image: FenceSize2,
       },
+      {
+        height: "1.20 เมตร",
+        width: "2.40 เมตร/แผง",
+        image: FenceSize3,
+      },
     ],
 
     specs: [
@@ -199,23 +219,69 @@ export const products = [
         value: "แผงรั้วชุบ PE สีดำ",
       },
       {
+        label: "วัสดุ",
+        value:
+          "เหล็กกล้า ชุบสังกะสี (Hot Dip Galvanized) ป้องกันการกัดกร่อน ทนทานต่อการใช้งาน เคลือบผิว PE สีดำ เพิ่มความสวยงามและป้องกันสนิมอีกชั้น",
+      },
+      {
+        label: "ความสูง",
+        value: "2.00 เมตร / 1.50 เมตร / 1.20 เมตร",
+      },
+      {
+        label: "ความยาว",
+        value: "2.40 เมตร/แผง",
+      },
+      {
+        label: "ขนาดช่องลวด",
+        value: "6 x 20 ซม. (กว้าง x สูง)",
+      },
+      {
+        label: "ขนาดลวดแนวตั้ง",
+        value: "5 มม.",
+      },
+      {
+        label: "ขนาดลวดแนวนอน",
+        value: "6 มม.",
+      },
+      {
+        label: "ลวดดัดโค้ง",
+        value: "2 ชั้น เพิ่มความแข็งแรง",
+      },
+      {
+        label: "เสาเหล็กกล่อง",
+        value: "ขนาด 50 x 50 มม. หนา 2.3 มม.",
+      },
+      {
+        label: "ฐานเสาเหล็ก",
+        value: "ขนาด 150 x 150 มม. หนา 6 มม.",
+      },
+      {
         label: "สี",
         value: "ดำด้าน",
       },
       {
-        label: "วัสดุ",
-        value: "เหล็กเคลือบ PE",
+        label: "การใช้งาน",
+        value:
+          "บ้านพักอาศัย, โรงงาน, โครงการ, สถานที่ราชการ",
       },
     ],
 
     features: [
       {
-        title: "ดีไซน์โมเดิร์น",
-        description: "สวยงาม ทันสมัย",
+        title: "ป้องกันสนิมสองชั้น",
+        description: "ชุบกัลวาไนซ์ก่อนเคลือบผิว PE",
       },
       {
-        title: "ป้องกันสนิม",
-        description: "ใช้งานได้ยาวนาน",
+        title: "ดีไซน์โมเดิร์น",
+        description: "สีดำด้าน เข้ากับบ้านทุกสไตล์",
+      },
+      {
+        title: "แข็งแรงทนทาน",
+        description: "ลวดดัดโค้ง 2 ชั้น เสริมความแข็งแรง",
+      },
+      {
+        title: "ติดตั้งง่าย",
+        description: "พร้อมเสาเหล็กกล่องและฐานเสามาตรฐาน",
       },
     ],
 
@@ -247,10 +313,10 @@ export const products = [
     subtitle: "WELDED WIRE MESH FENCE (GREEN PE)",
 
     description:
-      "แผงรั้วชุบ PE สีเขียว เหมาะสำหรับบ้าน โครงการ สวน และพื้นที่กลางแจ้ง",
+      "แผงรั้วสำเร็จรูปชุบกัลวาไนซ์แล้วเคลือบผิว PE สีเขียว ป้องกันสนิมสองชั้น กลมกลืนกับพื้นที่สวนและงาน Landscape ลวดดัดโค้ง 2 ชั้นเพิ่มความแข็งแรง พร้อมเสาเหล็กกล่องและฐานเสามาตรฐาน เหมาะสำหรับบ้าน โครงการ สวน และพื้นที่กลางแจ้ง",
 
     shortDescription:
-      "โดดเด่นเป็นเอกลักษณ์",
+      "โดดเด่นเป็นเอกลักษณ์ ป้องกันสนิมสองชั้น",
 
     startingPrice: 1450,
 
@@ -270,6 +336,16 @@ export const products = [
         width: "2.40 เมตร/แผง",
         image: FenceSize1,
       },
+      {
+        height: "1.50 เมตร",
+        width: "2.40 เมตร/แผง",
+        image: FenceSize2,
+      },
+      {
+        height: "1.20 เมตร",
+        width: "2.40 เมตร/แผง",
+        image: FenceSize3,
+      },
     ],
 
     specs: [
@@ -278,8 +354,50 @@ export const products = [
         value: "แผงรั้วชุบ PE สีเขียว",
       },
       {
+        label: "วัสดุ",
+        value:
+          "เหล็กกล้า ชุบสังกะสี (Hot Dip Galvanized) ป้องกันการกัดกร่อน ทนทานต่อการใช้งาน เคลือบผิว PE สีเขียว เพิ่มความสวยงามและป้องกันสนิมอีกชั้น",
+      },
+      {
+        label: "ความสูง",
+        value: "2.00 เมตร / 1.50 เมตร / 1.20 เมตร",
+      },
+      {
+        label: "ความยาว",
+        value: "2.40 เมตร/แผง",
+      },
+      {
+        label: "ขนาดช่องลวด",
+        value: "6 x 20 ซม. (กว้าง x สูง)",
+      },
+      {
+        label: "ขนาดลวดแนวตั้ง",
+        value: "5 มม.",
+      },
+      {
+        label: "ขนาดลวดแนวนอน",
+        value: "6 มม.",
+      },
+      {
+        label: "ลวดดัดโค้ง",
+        value: "2 ชั้น เพิ่มความแข็งแรง",
+      },
+      {
+        label: "เสาเหล็กกล่อง",
+        value: "ขนาด 50 x 50 มม. หนา 2.3 มม.",
+      },
+      {
+        label: "ฐานเสาเหล็ก",
+        value: "ขนาด 150 x 150 มม. หนา 6 มม.",
+      },
+      {
         label: "สี",
         value: "เขียว",
+      },
+      {
+        label: "การใช้งาน",
+        value:
+          "บ้านพักอาศัย, โรงงาน, โครงการ, สถานที่ราชการ",
       },
     ],
 
@@ -287,6 +405,18 @@ export const products = [
       {
         title: "สีโดดเด่น",
         description: "เหมาะกับงาน Landscape",
+      },
+      {
+        title: "ป้องกันสนิมสองชั้น",
+        description: "ชุบกัลวาไนซ์ก่อนเคลือบผิว PE",
+      },
+      {
+        title: "แข็งแรงทนทาน",
+        description: "ลวดดัดโค้ง 2 ชั้น เสริมความแข็งแรง",
+      },
+      {
+        title: "ติดตั้งง่าย",
+        description: "พร้อมเสาเหล็กกล่องและฐานเสามาตรฐาน",
       },
     ],
 
@@ -309,7 +439,7 @@ export const products = [
 
     category: "ตาข่ายกรงไก่",
 
-    badge: "สินค้าใหม่",
+    badge: "พรีเมียม",
 
     title: "ตาข่ายกรงไก่แสตนเลส",
 
@@ -327,9 +457,9 @@ export const products = [
 
     currency: "THB",
 
-    coverImage: WhiteWall,
+    coverImage: StainlessMeshImg,
 
-    gallery: [WhiteWall],
+    gallery: [StainlessMeshImg],
 
     sizes: [],
 
@@ -378,7 +508,7 @@ export const products = [
 
     category: "ตาข่ายกรงไก่",
 
-    badge: "สินค้าใหม่",
+    badge: "คุ้มค่า",
 
     title: "ตาข่ายกรงไก่ชุบเย็น",
 
@@ -396,9 +526,9 @@ export const products = [
 
     currency: "THB",
 
-    coverImage: WhiteWall,
+    coverImage: ColdGalvanizedMeshImg,
 
-    gallery: [WhiteWall],
+    gallery: [ColdGalvanizedMeshImg],
 
     sizes: [],
 
@@ -441,6 +571,75 @@ export const products = [
   },
 
   {
+    id: "hot-dip-galvanized-chicken-wire-mesh",
+
+    slug: "hot-dip-galvanized-chicken-wire-mesh",
+
+    category: "ตาข่ายกรงไก่",
+
+    badge: "แนะนำ",
+
+    title: "ตาข่ายกรงไก่ชุบร้อน",
+
+    shortTitle: "ตาข่ายกรงไก่ชุบร้อน",
+
+    subtitle: "HOT-DIP GALVANIZED CHICKEN WIRE MESH",
+
+    description:
+      "ตาข่ายกรงไก่ชุบกัลวาไนซ์แบบจุ่มร้อน (Hot-Dip Galvanized) เคลือบสังกะสีหนากว่าแบบชุบเย็น ทนสนิมและทนต่อสภาพอากาศได้ดีเยี่ยม เหมาะกับงานภายนอกระยะยาว",
+
+    shortDescription:
+      "เคลือบสังกะสีหนา ทนสนิมสูงสุด",
+
+    startingPrice: 60,
+
+    currency: "THB",
+
+    coverImage: HotGalvanizedMeshImg,
+
+    gallery: [HotGalvanizedMeshImg],
+
+    sizes: [],
+
+    specs: [
+      {
+        label: "ประเภทสินค้า",
+        value: "ตาข่ายกรงไก่ชุบร้อน",
+      },
+      {
+        label: "วัสดุ",
+        value: "ลวดเหล็กชุบกัลวาไนซ์แบบจุ่มร้อน (Hot-Dip Galvanized)",
+      },
+      {
+        label: "ขนาดตาข่ายและความกว้าง/ยาวม้วน",
+        value: "มีหลายขนาด ตามหน้างาน กรุณาสอบถามเจ้าหน้าที่",
+      },
+      {
+        label: "การใช้งาน",
+        value: "งานภายนอก งานเกษตร งานที่ต้องการความทนทานสูง",
+      },
+    ],
+
+    features: [
+      {
+        title: "เคลือบสังกะสีหนา",
+        description: "ทนสนิมได้ดีกว่าแบบชุบเย็น",
+      },
+      {
+        title: "ทนทานระยะยาว",
+        description: "เหมาะกับงานภายนอก",
+      },
+    ],
+
+    seo: {
+      title: "ตาข่ายกรงไก่ชุบร้อน | MACTECH",
+      description:
+        "จำหน่ายตาข่ายกรงไก่ชุบกัลวาไนซ์แบบจุ่มร้อน ทนสนิมสูงสุด คุณภาพดี",
+      keywords: ["ตาข่ายกรงไก่", "ตาข่ายชุบร้อน", "Hot-Dip Galvanized", "MACTECH"],
+    },
+  },
+
+  {
     id: "pvc-chicken-wire-mesh",
 
     slug: "pvc-chicken-wire-mesh",
@@ -465,9 +664,9 @@ export const products = [
 
     currency: "THB",
 
-    coverImage: WhiteWall,
+    coverImage: PvcMeshImg,
 
-    gallery: [WhiteWall],
+    gallery: [PvcMeshImg],
 
     sizes: [],
 
@@ -538,9 +737,9 @@ export const products = [
 
     currency: "THB",
 
-    coverImage: WhiteWall,
+    coverImage: BarbedWireImg,
 
-    gallery: [WhiteWall],
+    gallery: [BarbedWireImg],
 
     sizes: [],
 

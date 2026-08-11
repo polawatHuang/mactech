@@ -17,12 +17,14 @@ const mainMenus = [
 ];
 
 const products = [
-  { name: "แผงรั้วกัลวาไนซ์", href: "/products/galvanized-fence" },
-  { name: "แผงรั้ว เคลือบสีดำ", href: "/products/black-pe-fence" },
-  { name: "แผงรั้ว เคลือบสีเขียว", href: "/products/green-pe-fence" },
-  // { name: "แผงรั้ว แบบประหยัด", href: "/products/economy" },
-  // { name: "เสา / อุปกรณ์", href: "/products/accessories" },
-  // { name: "ชุดประตูรั้ว", href: "/products/gate" },
+  { name: "แผงรั้วสำเร็จรูปกัลวาไนซ์", href: "/products/galvanized-fence" },
+  { name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE ดำ", href: "/products/black-pe-fence" },
+  { name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE เขียว", href: "/products/green-pe-fence" },
+  { name: "ตาข่ายกรงไก่แสตนเลส", href: "/products/stainless-chicken-wire-mesh" },
+  { name: "ตาข่ายกรงไก่ชุบเย็น", href: "/products/galvanized-chicken-wire-mesh" },
+  { name: "ตาข่ายกรงไก่ชุบร้อน", href: "/products/hot-dip-galvanized-chicken-wire-mesh" },
+  { name: "ตาข่ายกรงไก่ PVC", href: "/products/pvc-chicken-wire-mesh" },
+  { name: "ลวดหนาม", href: "/products/barbed-wire" },
 ];
 
 export default function Footer() {

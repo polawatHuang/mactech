@@ -14,6 +14,15 @@ import {
 } from "@heroicons/react/24/outline";
 import Footer from "@/components/Footer";
 
+export const metadata = {
+  title: "บริการให้คำปรึกษาฟรี | MACTECH",
+  description:
+    "ปรึกษาฟรีเรื่องแผงรั้วเหล็ก ตาข่ายกรงไก่ และลวดหนามกับผู้เชี่ยวชาญ MACTECH ตั้งแต่สำรวจหน้างาน ออกแบบ เสนอราคา ไปจนถึงติดตั้ง ไม่มีค่าใช้จ่าย",
+  alternates: {
+    canonical: "/consulting",
+  },
+};
+
 const benefits = [
   {
     title: "ให้คำแนะนำโดยผู้เชี่ยวชาญ",
@@ -243,7 +252,7 @@ export default function ConsultingPage() {
       <section className="container-main px-6 pb-16 lg:px-14">
         <div className="relative overflow-hidden border border-white/15 bg-[#0b0b0b] p-8 sm:p-10">
           <Image
-            src="/images/consulting-cta.jpg"
+            src="/images/store.png"
             alt=""
             fill
             className="object-cover opacity-25"
