@@ -12,28 +12,63 @@ import {
 import Image from "next/image";
 import LogoImg from "@/public/images/logo.webp";
 
-const products = [
+const productCategories = [
   {
-    name: "แผงรั้วสำเร็จรูปกัลวาไนซ์",
-    href: "/products/galvanized-fence",
-    desc: "แข็งแรง ทนสนิม สำหรับงานมาตรฐาน",
+    category: "สินค้าแผงรั้ว",
+    items: [
+      {
+        name: "แผงรั้วสำเร็จรูปกัลวาไนซ์",
+        href: "/products/galvanized-fence",
+        desc: "แข็งแรง ทนสนิม สำหรับงานมาตรฐาน",
+      },
+      {
+        name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE ดำ",
+        href: "/products/black-pe-fence",
+        desc: "โทนดำพรีเมียม เหมาะกับบ้านและโครงการ",
+      },
+      {
+        name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE เขียว",
+        href: "/products/green-pe-fence",
+        desc: "สีเขียวกลมกลืน เหมาะกับสวนและพื้นที่ภายนอก",
+      },
+    ],
   },
   {
-    name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE ดำ",
-    href: "/products/black-pe-fence",
-    desc: "โทนดำพรีเมียม เหมาะกับบ้านและโครงการ",
+    category: "สินค้าตาข่าย",
+    items: [
+      {
+        name: "ตาข่ายกรงไก่แสตนเลส",
+        href: "/products/stainless-chicken-wire-mesh",
+        desc: "ทนสนิม ทนความชื้น ใช้งานได้ยาวนาน",
+      },
+      {
+        name: "ตาข่ายกรงไก่ชุบเย็น",
+        href: "/products/galvanized-chicken-wire-mesh",
+        desc: "ผิวเรียบ ป้องกันสนิม ราคาคุ้มค่า",
+      },
+      {
+        name: "ตาข่ายกรงไก่ PVC",
+        href: "/products/pvc-chicken-wire-mesh",
+        desc: "เคลือบ PVC ทนทาน สวยงาม",
+      },
+    ],
   },
   {
-    name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE เขียว",
-    href: "/products/green-pe-fence",
-    desc: "สีเขียวกลมกลืน เหมาะกับสวนและพื้นที่ภายนอก",
+    category: "สินค้าลวดหนาม",
+    items: [
+      {
+        name: "ลวดหนาม",
+        href: "/products/barbed-wire",
+        desc: "แข็งแรง ป้องกันสนิม เหมาะกับรั้วกันขโมย",
+      },
+    ],
   },
 ];
 
 const menus = [
   { name: "หน้าแรก", href: "/" },
-  { name: "บริการให้คำปรึกษา", href: "/consulting" },
   { name: "เกี่ยวกับเรา", href: "/about" },
+  { name: "บริการให้คำปรึกษา", href: "/consulting" },
   { name: "ติดต่อเรา", href: "/contact" },
 ];
 
@@ -60,6 +95,13 @@ export default function Header() {
             หน้าแรก
           </Link>
 
+          <Link
+            href={menus[1].href}
+            className="text-sm font-semibold text-white transition hover:text-[#d4a63c]"
+          >
+            {menus[1].name}
+          </Link>
+
           <Popover className="relative">
             {({ open, close }) => (
               <>
@@ -68,7 +110,7 @@ export default function Header() {
                     open ? "text-[#d4a63c]" : "text-white hover:text-[#d4a63c]"
                   }`}
                 >
-                  สินค้า
+                  สินค้าและผลิตภัณฑ์
                   <ChevronDownIcon
                     className={`h-4 w-4 transition ${open ? "rotate-180" : ""}`}
                   />
@@ -83,37 +125,50 @@ export default function Header() {
                   leaveFrom="opacity-100 translate-y-0 scale-100"
                   leaveTo="opacity-0 translate-y-2 scale-95"
                 >
-                  <Popover.Panel className="absolute left-1/2 top-9 w-[420px] -translate-x-1/2 border border-[#d4a63c]/30 bg-[#080808] p-3 shadow-[0_24px_80px_rgba(0,0,0,.65)]">
+                  <Popover.Panel className="absolute left-1/2 top-9 max-h-[75vh] w-[420px] -translate-x-1/2 overflow-y-auto border border-[#d4a63c]/30 bg-[#080808] p-3 shadow-[0_24px_80px_rgba(0,0,0,.65)]">
                     <div className="mb-2 border-b border-white/10 px-3 pb-3">
                       <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#d4a63c]">
                         Products
                       </p>
                       <h3 className="mt-1 text-lg font-bold text-white">
-                        สินค้าแผงรั้ว MACTECH
+                        สินค้า MACTECH
                       </h3>
                     </div>
 
-                    <div className="space-y-1">
-                      {products.map((item) => (
-                        <Link
-                          key={item.href}
-                          href={item.href}
-                          onClick={() => close()}
-                          className="group block border border-transparent px-3 py-3 transition hover:border-[#d4a63c]/25 hover:bg-[#d4a63c]/10"
+                    <div className="space-y-3">
+                      {productCategories.map((group) => (
+                        <div
+                          key={group.category}
+                          className="border-t border-white/10 pt-3 first:border-t-0 first:pt-0"
                         >
-                          <div className="flex items-start justify-between gap-4">
-                            <div>
-                              <p className="text-sm font-bold text-white transition group-hover:text-[#d4a63c]">
-                                {item.name}
-                              </p>
-                              <p className="mt-1 text-xs leading-relaxed text-white/55">
-                                {item.desc}
-                              </p>
-                            </div>
+                          <p className="px-3 pb-1 text-xs font-bold uppercase tracking-wide text-[#d4a63c]">
+                            {group.category}
+                          </p>
 
-                            <span className="mt-1 h-2 w-2 shrink-0 bg-[#d4a63c]" />
+                          <div className="space-y-1">
+                            {group.items.map((item) => (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                onClick={() => close()}
+                                className="group block border border-transparent px-3 py-3 transition hover:border-[#d4a63c]/25 hover:bg-[#d4a63c]/10"
+                              >
+                                <div className="flex items-start justify-between gap-4">
+                                  <div>
+                                    <p className="text-sm font-bold text-white transition group-hover:text-[#d4a63c]">
+                                      {item.name}
+                                    </p>
+                                    <p className="mt-1 text-xs leading-relaxed text-white/55">
+                                      {item.desc}
+                                    </p>
+                                  </div>
+
+                                  <span className="mt-1 h-2 w-2 shrink-0 bg-[#d4a63c]" />
+                                </div>
+                              </Link>
+                            ))}
                           </div>
-                        </Link>
+                        </div>
                       ))}
                     </div>
                   </Popover.Panel>
@@ -122,7 +177,7 @@ export default function Header() {
             )}
           </Popover>
 
-          {menus.slice(1).map((item) => (
+          {menus.slice(2).map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -158,10 +213,14 @@ export default function Header() {
         </div>
       </div>
 
-      <Dialog open={mobileOpen} onClose={setMobileOpen} className="relative z-[60] lg:hidden">
+      <Dialog
+        open={mobileOpen}
+        onClose={setMobileOpen}
+        className="relative z-[60] lg:hidden"
+      >
         <div className="fixed inset-0 bg-black/70 backdrop-blur-sm" />
 
-        <Dialog.Panel className="fixed right-0 top-0 h-full w-[86%] max-w-sm border-l border-[#d4a63c]/25 bg-[#050505] p-5 shadow-2xl">
+        <Dialog.Panel className="fixed right-0 top-0 h-full w-[86%] max-w-sm overflow-y-auto border-l border-[#d4a63c]/25 bg-[#050505] p-5 shadow-2xl">
           <div className="flex items-center justify-between border-b border-white/10 pb-5">
             <img src="/images/logo.png" alt="MACTECH" className="w-[165px]" />
 
@@ -183,12 +242,20 @@ export default function Header() {
               หน้าแรก
             </Link>
 
+            <Link
+              href={menus[1].href}
+              onClick={() => setMobileOpen(false)}
+              className="flex h-12 items-center border-b border-white/10 font-semibold text-white"
+            >
+              {menus[1].name}
+            </Link>
+
             <button
               type="button"
               onClick={() => setMobileProductOpen((prev) => !prev)}
               className="flex h-12 w-full items-center justify-between border-b border-white/10 font-semibold text-white"
             >
-              สินค้า
+              สินค้าและผลิตภัณฑ์
               <ChevronDownIcon
                 className={`h-5 w-5 transition ${
                   mobileProductOpen ? "rotate-180 text-[#d4a63c]" : ""
@@ -197,24 +264,34 @@ export default function Header() {
             </button>
 
             {mobileProductOpen && (
-              <div className="space-y-2 border-b border-white/10 py-3">
-                {products.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="block border-l-4 border-[#d4a63c] bg-white/[0.04] px-4 py-3"
-                  >
-                    <p className="text-sm font-bold text-white">{item.name}</p>
-                    <p className="mt-1 text-xs leading-relaxed text-white/55">
-                      {item.desc}
+              <div className="space-y-4 border-b border-white/10 py-3">
+                {productCategories.map((group) => (
+                  <div key={group.category} className="space-y-2">
+                    <p className="px-1 text-xs font-bold uppercase tracking-wide text-[#d4a63c]">
+                      {group.category}
                     </p>
-                  </Link>
+
+                    {group.items.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setMobileOpen(false)}
+                        className="block border-l-4 border-[#d4a63c] bg-white/[0.04] px-4 py-3"
+                      >
+                        <p className="text-sm font-bold text-white">
+                          {item.name}
+                        </p>
+                        <p className="mt-1 text-xs leading-relaxed text-white/55">
+                          {item.desc}
+                        </p>
+                      </Link>
+                    ))}
+                  </div>
                 ))}
               </div>
             )}
 
-            {menus.slice(1).map((item) => (
+            {menus.slice(2).map((item) => (
               <Link
                 key={item.href}
                 href={item.href}

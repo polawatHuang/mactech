@@ -9,10 +9,10 @@ import LogoImg from "../public/images/logo.webp";
 
 const mainMenus = [
   { name: "หน้าแรก", href: "/" },
-  { name: "สินค้า", href: "/products" },
+  { name: "เกี่ยวกับเรา", href: "/about" },
+  { name: "สินค้าและผลิตภัณฑ์", href: "/products" },
   { name: "บริการให้คำปรึกษา", href: "/consulting" },
 //   { name: "ผลงานของเรา", href: "/projects" },
-  { name: "เกี่ยวกับเรา", href: "/about" },
   { name: "ติดต่อเรา", href: "/contact" },
 ];
 

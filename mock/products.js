@@ -301,6 +301,286 @@ export const products = [
       ],
     },
   },
+
+  {
+    id: "stainless-chicken-wire-mesh",
+
+    slug: "stainless-chicken-wire-mesh",
+
+    category: "ตาข่ายกรงไก่",
+
+    badge: "สินค้าใหม่",
+
+    title: "ตาข่ายกรงไก่แสตนเลส",
+
+    shortTitle: "ตาข่ายกรงไก่แสตนเลส",
+
+    subtitle: "STAINLESS STEEL CHICKEN WIRE MESH",
+
+    description:
+      "ตาข่ายกรงไก่ผลิตจากลวดแสตนเลส ทนสนิม ทนความชื้นสูง เหมาะสำหรับงานที่ต้องการความทนทานเป็นพิเศษ",
+
+    shortDescription:
+      "ทนสนิม ทนความชื้น ใช้งานได้ยาวนาน",
+
+    startingPrice: 65,
+
+    currency: "THB",
+
+    coverImage: WhiteWall,
+
+    gallery: [WhiteWall],
+
+    sizes: [],
+
+    specs: [
+      {
+        label: "ประเภทสินค้า",
+        value: "ตาข่ายกรงไก่แสตนเลส",
+      },
+      {
+        label: "วัสดุ",
+        value: "ลวดแสตนเลส (Stainless Steel Wire)",
+      },
+      {
+        label: "ขนาดตาข่ายและความกว้าง/ยาวม้วน",
+        value: "มีหลายขนาด ตามหน้างาน กรุณาสอบถามเจ้าหน้าที่",
+      },
+      {
+        label: "การใช้งาน",
+        value: "งานกรงสัตว์ปีก งานเกษตร งานอุตสาหกรรมที่สัมผัสความชื้น",
+      },
+    ],
+
+    features: [
+      {
+        title: "ทนสนิมสูง",
+        description: "เหมาะกับพื้นที่ชื้นหรือใกล้ทะเล",
+      },
+      {
+        title: "แข็งแรง ทนทาน",
+        description: "ใช้งานได้ยาวนาน",
+      },
+    ],
+
+    seo: {
+      title: "ตาข่ายกรงไก่แสตนเลส | MACTECH",
+      description:
+        "จำหน่ายตาข่ายกรงไก่แสตนเลส ทนสนิม ทนความชื้น คุณภาพสูง",
+      keywords: ["ตาข่ายกรงไก่", "ตาข่ายแสตนเลส", "MACTECH"],
+    },
+  },
+
+  {
+    id: "galvanized-chicken-wire-mesh",
+
+    slug: "galvanized-chicken-wire-mesh",
+
+    category: "ตาข่ายกรงไก่",
+
+    badge: "สินค้าใหม่",
+
+    title: "ตาข่ายกรงไก่ชุบเย็น",
+
+    shortTitle: "ตาข่ายกรงไก่ชุบเย็น",
+
+    subtitle: "ELECTRO GALVANIZED CHICKEN WIRE MESH",
+
+    description:
+      "ตาข่ายกรงไก่ชุบเย็น (Electro Galvanized) ผิวเรียบ ป้องกันสนิมในระดับใช้งานทั่วไป ราคาคุ้มค่า",
+
+    shortDescription:
+      "ผิวเรียบ ป้องกันสนิม ราคาคุ้มค่า",
+
+    startingPrice: 45,
+
+    currency: "THB",
+
+    coverImage: WhiteWall,
+
+    gallery: [WhiteWall],
+
+    sizes: [],
+
+    specs: [
+      {
+        label: "ประเภทสินค้า",
+        value: "ตาข่ายกรงไก่ชุบเย็น",
+      },
+      {
+        label: "วัสดุ",
+        value: "ลวดเหล็กชุบสังกะสีแบบเย็น (Electro Galvanized)",
+      },
+      {
+        label: "ขนาดตาข่ายและความกว้าง/ยาวม้วน",
+        value: "มีหลายขนาด ตามหน้างาน กรุณาสอบถามเจ้าหน้าที่",
+      },
+      {
+        label: "การใช้งาน",
+        value: "งานกรงสัตว์ปีก งานเกษตร งานทั่วไป",
+      },
+    ],
+
+    features: [
+      {
+        title: "ราคาคุ้มค่า",
+        description: "เหมาะกับงานทั่วไป",
+      },
+      {
+        title: "ป้องกันสนิม",
+        description: "ผิวชุบสังกะสีเรียบ",
+      },
+    ],
+
+    seo: {
+      title: "ตาข่ายกรงไก่ชุบเย็น | MACTECH",
+      description:
+        "จำหน่ายตาข่ายกรงไก่ชุบเย็น (Electro Galvanized) คุณภาพดี ราคาคุ้มค่า",
+      keywords: ["ตาข่ายกรงไก่", "ตาข่ายชุบเย็น", "MACTECH"],
+    },
+  },
+
+  {
+    id: "pvc-chicken-wire-mesh",
+
+    slug: "pvc-chicken-wire-mesh",
+
+    category: "ตาข่ายกรงไก่",
+
+    badge: "สินค้าใหม่",
+
+    title: "ตาข่ายกรงไก่ PVC",
+
+    shortTitle: "ตาข่ายกรงไก่ PVC",
+
+    subtitle: "PVC COATED CHICKEN WIRE MESH",
+
+    description:
+      "ตาข่ายกรงไก่เคลือบ PVC เพิ่มความทนทานและความสวยงาม ป้องกันสนิมได้ดีกว่าแบบชุบเย็น",
+
+    shortDescription:
+      "เคลือบ PVC ทนทาน สวยงาม",
+
+    startingPrice: 55,
+
+    currency: "THB",
+
+    coverImage: WhiteWall,
+
+    gallery: [WhiteWall],
+
+    sizes: [],
+
+    specs: [
+      {
+        label: "ประเภทสินค้า",
+        value: "ตาข่ายกรงไก่ PVC",
+      },
+      {
+        label: "วัสดุ",
+        value: "ลวดเหล็กชุบสังกะสี เคลือบผิว PVC",
+      },
+      {
+        label: "สี",
+        value: "เขียว / ดำ (ตามหน้างาน)",
+      },
+      {
+        label: "ขนาดตาข่ายและความกว้าง/ยาวม้วน",
+        value: "มีหลายขนาด ตามหน้างาน กรุณาสอบถามเจ้าหน้าที่",
+      },
+      {
+        label: "การใช้งาน",
+        value: "งานกรงสัตว์ปีก งานสวน งานที่ต้องการความสวยงาม",
+      },
+    ],
+
+    features: [
+      {
+        title: "เคลือบ PVC",
+        description: "ป้องกันสนิมได้ดี สีสวยงาม",
+      },
+      {
+        title: "ทนทาน",
+        description: "ใช้งานได้ยาวนาน",
+      },
+    ],
+
+    seo: {
+      title: "ตาข่ายกรงไก่ PVC | MACTECH",
+      description:
+        "จำหน่ายตาข่ายกรงไก่เคลือบ PVC ทนทาน สวยงาม หลากสี",
+      keywords: ["ตาข่ายกรงไก่", "ตาข่าย PVC", "MACTECH"],
+    },
+  },
+
+  {
+    id: "barbed-wire",
+
+    slug: "barbed-wire",
+
+    category: "ลวดหนาม",
+
+    badge: "สินค้าใหม่",
+
+    title: "ลวดหนาม",
+
+    shortTitle: "ลวดหนาม",
+
+    subtitle: "BARBED WIRE",
+
+    description:
+      "ลวดหนามชุบกัลวาไนซ์ ป้องกันสนิม แข็งแรง เหมาะสำหรับงานรั้วกันขโมยและพื้นที่เกษตร",
+
+    shortDescription:
+      "แข็งแรง ป้องกันสนิม เหมาะกับรั้วกันขโมย",
+
+    startingPrice: 850,
+
+    currency: "THB",
+
+    coverImage: WhiteWall,
+
+    gallery: [WhiteWall],
+
+    sizes: [],
+
+    specs: [
+      {
+        label: "ประเภทสินค้า",
+        value: "ลวดหนาม",
+      },
+      {
+        label: "วัสดุ",
+        value: "เหล็กชุบกัลวาไนซ์ (Galvanized)",
+      },
+      {
+        label: "ความยาว",
+        value: "ตามม้วน กรุณาสอบถามเจ้าหน้าที่",
+      },
+      {
+        label: "การใช้งาน",
+        value: "รั้วกันขโมย พื้นที่เกษตร แนวเขตที่ดิน",
+      },
+    ],
+
+    features: [
+      {
+        title: "ป้องกันการบุกรุก",
+        description: "เหมาะกับแนวรั้วกันขโมย",
+      },
+      {
+        title: "ชุบกัลวาไนซ์",
+        description: "ป้องกันสนิม ใช้งานได้นาน",
+      },
+    ],
+
+    seo: {
+      title: "ลวดหนาม | MACTECH",
+      description:
+        "จำหน่ายลวดหนามชุบกัลวาไนซ์ แข็งแรง ป้องกันสนิม เหมาะกับงานรั้ว",
+      keywords: ["ลวดหนาม", "รั้วลวดหนาม", "MACTECH"],
+    },
+  },
 ];
 
 export const relatedProducts = [
