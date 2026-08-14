@@ -52,11 +52,11 @@ export default function HeroSection() {
 
             {/* Title */}
             <div className="mb-5">
-              <h2 className="text-[42px] font-extrabold leading-[1.5] tracking-[-0.03em] text-white sm:text-[36px] lg:text-[54px]">
+              <h2 className="text-[28px] font-extrabold leading-[1.4] tracking-[-0.02em] text-white sm:text-[38px] sm:leading-[1.3] lg:text-[54px] lg:leading-[1.25]">
                 ผู้นำระบบรั้วอุตสาหกรรม รั้วสำเร็จรูป
               </h2>
 
-              <h2 className="mt-1 text-[42px] font-extrabold leading-[1.05] tracking-[-0.03em] text-[#d4a63c] sm:text-[36px] lg:text-[54px]">
+              <h2 className="mt-2 text-[28px] font-extrabold leading-[1.4] tracking-[-0.02em] text-[#d4a63c] sm:text-[38px] sm:leading-[1.3] lg:text-[54px] lg:leading-[1.25]">
                 คุณภาพสูง
               </h2>
             </div>
