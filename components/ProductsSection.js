@@ -14,6 +14,12 @@ import ColdGalvanizedMeshImg from "../public/products/ตาข่ายกร�
 import HotGalvanizedMeshImg from "../public/products/ตาข่ายกรงไก่ชุบร้อน.jpg";
 import PvcMeshImg from "../public/products/ตาข่ายกรงไก่ PVC.jpg";
 import BarbedWireImg from "../public/products/ลวดหนาม.jpg";
+import DiamondMeshWireImg from "../public/products/ตาข่ายถักข้าวหลามตัด.jpg";
+import ExpandedMetalMeshImg from "../public/products/ตะแกรงเหล็กฉีก.jpg";
+import WormPatternGratingImg from "../public/products/ตะแกรงเหล็กตัวหนอน.jpg";
+import ArcMeshPanelImg from "../public/products/แผงตะแกรงอาร์ค.jpg";
+import KnottedMeshWireImg from "../public/products/ลวดตาข่ายถักปม.jpg";
+import FenceWireMeshImg from "../public/products/ลวดตาข่ายรั้ว.jpg";
 import Image from "next/image";
 
 const products = [
@@ -56,6 +62,36 @@ const products = [
     title: "ลวดหนาม",
     image: BarbedWireImg,
     href: "/products/barbed-wire",
+  },
+  {
+    title: "ลวดถักตาข่ายข้าวหลามตัด",
+    image: DiamondMeshWireImg,
+    href: "/products/diamond-mesh-wire",
+  },
+  {
+    title: "ลวดถักตาข่ายถักปม",
+    image: KnottedMeshWireImg,
+    href: "/products/knotted-mesh-wire",
+  },
+  {
+    title: "ลวดตาข่ายรั้ว",
+    image: FenceWireMeshImg,
+    href: "/products/fence-wire-mesh",
+  },
+  {
+    title: "ตะแกรงเหล็กฉีก",
+    image: ExpandedMetalMeshImg,
+    href: "/products/expanded-metal-mesh",
+  },
+  {
+    title: "ตะแกรงเหล็กตัวหนอน",
+    image: WormPatternGratingImg,
+    href: "/products/worm-pattern-steel-grating",
+  },
+  {
+    title: "แผงตะแกรงอาร์ค",
+    image: ArcMeshPanelImg,
+    href: "/products/arc-mesh-panel",
   },
 //   {
 //     title: "แผงรั้ว แบบประหยัด",

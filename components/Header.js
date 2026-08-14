@@ -14,7 +14,7 @@ import LogoImg from "@/public/images/logo.webp";
 
 const productCategories = [
   {
-    category: "สินค้าแผงรั้ว",
+    category: "แผงรั้วสำเร็จรูป แผงรั้วอุตสาหกรรม แผงรั้วทางด่วน",
     items: [
       {
         name: "แผงรั้วสำเร็จรูปกัลวาไนซ์",
@@ -34,7 +34,32 @@ const productCategories = [
     ],
   },
   {
-    category: "สินค้าตาข่าย",
+    category: "การป้องกัน กั้นพื้นที่",
+    items: [
+      {
+        name: "ลวดหนาม",
+        href: "/products/barbed-wire",
+        desc: "แข็งแรง ป้องกันสนิม เหมาะกับรั้วกันขโมย",
+      },
+      {
+        name: "ลวดถักตาข่ายข้าวหลามตัด",
+        href: "/products/diamond-mesh-wire",
+        desc: "ยืดหยุ่น แข็งแรง ใช้งานได้หลากหลาย",
+      },
+      {
+        name: "ลวดถักตาข่ายถักปม",
+        href: "/products/knotted-mesh-wire",
+        desc: "จุดถักปมแน่นหนา แข็งแรงทนทาน",
+      },
+      {
+        name: "ลวดตาข่ายรั้ว",
+        href: "/products/fence-wire-mesh",
+        desc: "อเนกประสงค์ ราคาคุ้มค่า",
+      },
+    ],
+  },
+  {
+    category: "ตาข่าย",
     items: [
       {
         name: "ตาข่ายกรงไก่แสตนเลส",
@@ -59,12 +84,22 @@ const productCategories = [
     ],
   },
   {
-    category: "สินค้าลวดหนาม",
+    category: "ตะแกรงเหล็ก",
     items: [
       {
-        name: "ลวดหนาม",
-        href: "/products/barbed-wire",
-        desc: "แข็งแรง ป้องกันสนิม เหมาะกับรั้วกันขโมย",
+        name: "ตะแกรงเหล็กฉีก",
+        href: "/products/expanded-metal-mesh",
+        desc: "แข็งแรง ระบายอากาศได้ดี",
+      },
+      {
+        name: "ตะแกรงเหล็กตัวหนอน",
+        href: "/products/worm-pattern-steel-grating",
+        desc: "ลวดลายโดดเด่น แข็งแรง",
+      },
+      {
+        name: "แผงตะแกรงอาร์ค",
+        href: "/products/arc-mesh-panel",
+        desc: "ดีไซน์โค้งสวยงาม โดดเด่น",
       },
     ],
   },

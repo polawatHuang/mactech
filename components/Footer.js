@@ -25,6 +25,12 @@ const products = [
   { name: "ตาข่ายกรงไก่ชุบร้อน", href: "/products/hot-dip-galvanized-chicken-wire-mesh" },
   { name: "ตาข่ายกรงไก่ PVC", href: "/products/pvc-chicken-wire-mesh" },
   { name: "ลวดหนาม", href: "/products/barbed-wire" },
+  { name: "ลวดถักตาข่ายข้าวหลามตัด", href: "/products/diamond-mesh-wire" },
+  { name: "ลวดถักตาข่ายถักปม", href: "/products/knotted-mesh-wire" },
+  { name: "ลวดตาข่ายรั้ว", href: "/products/fence-wire-mesh" },
+  { name: "ตะแกรงเหล็กฉีก", href: "/products/expanded-metal-mesh" },
+  { name: "ตะแกรงเหล็กตัวหนอน", href: "/products/worm-pattern-steel-grating" },
+  { name: "แผงตะแกรงอาร์ค", href: "/products/arc-mesh-panel" },
 ];
 
 export default function Footer() {

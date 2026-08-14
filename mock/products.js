@@ -23,6 +23,12 @@ import ColdGalvanizedMeshImg from "@/public/products/ตาข่ายกรง
 import HotGalvanizedMeshImg from "@/public/products/ตาข่ายกรงไก่ชุบร้อน.jpg";
 import PvcMeshImg from "@/public/products/ตาข่ายกรงไก่ PVC.jpg";
 import BarbedWireImg from "@/public/products/ลวดหนาม.jpg";
+import DiamondMeshWireImg from "@/public/products/ตาข่ายถักข้าวหลามตัด.jpg";
+import ExpandedMetalMeshImg from "@/public/products/ตะแกรงเหล็กฉีก.jpg";
+import WormPatternGratingImg from "@/public/products/ตะแกรงเหล็กตัวหนอน.jpg";
+import ArcMeshPanelImg from "@/public/products/แผงตะแกรงอาร์ค.jpg";
+import KnottedMeshWireImg from "@/public/products/ลวดตาข่ายถักปม.jpg";
+import FenceWireMeshImg from "@/public/products/ลวดตาข่ายรั้ว.jpg";
 
 export const products = [
   {
@@ -30,7 +36,7 @@ export const products = [
 
     slug: "galvanized-fence",
 
-    category: "แผงรั้วเหล็ก",
+    category: "แผงรั้วสำเร็จรูป แผงรั้วอุตสาหกรรม แผงรั้วทางด่วน",
 
     badge: "สินค้าขายดี",
 
@@ -167,7 +173,7 @@ export const products = [
 
     slug: "black-pe-fence",
 
-    category: "แผงรั้วเหล็ก",
+    category: "แผงรั้วสำเร็จรูป แผงรั้วอุตสาหกรรม แผงรั้วทางด่วน",
 
     badge: "ยอดนิยม",
 
@@ -302,7 +308,7 @@ export const products = [
 
     slug: "green-pe-fence",
 
-    category: "แผงรั้วเหล็ก",
+    category: "แผงรั้วสำเร็จรูป แผงรั้วอุตสาหกรรม แผงรั้วทางด่วน",
 
     badge: "แนะนำ",
 
@@ -437,7 +443,7 @@ export const products = [
 
     slug: "stainless-chicken-wire-mesh",
 
-    category: "ตาข่ายกรงไก่",
+    category: "ตาข่าย",
 
     badge: "พรีเมียม",
 
@@ -506,7 +512,7 @@ export const products = [
 
     slug: "galvanized-chicken-wire-mesh",
 
-    category: "ตาข่ายกรงไก่",
+    category: "ตาข่าย",
 
     badge: "คุ้มค่า",
 
@@ -575,7 +581,7 @@ export const products = [
 
     slug: "hot-dip-galvanized-chicken-wire-mesh",
 
-    category: "ตาข่ายกรงไก่",
+    category: "ตาข่าย",
 
     badge: "แนะนำ",
 
@@ -644,7 +650,7 @@ export const products = [
 
     slug: "pvc-chicken-wire-mesh",
 
-    category: "ตาข่ายกรงไก่",
+    category: "ตาข่าย",
 
     badge: "สินค้าใหม่",
 
@@ -717,7 +723,7 @@ export const products = [
 
     slug: "barbed-wire",
 
-    category: "ลวดหนาม",
+    category: "การป้องกัน กั้นพื้นที่",
 
     badge: "สินค้าใหม่",
 
@@ -778,6 +784,432 @@ export const products = [
       description:
         "จำหน่ายลวดหนามชุบกัลวาไนซ์ แข็งแรง ป้องกันสนิม เหมาะกับงานรั้ว",
       keywords: ["ลวดหนาม", "รั้วลวดหนาม", "MACTECH"],
+    },
+  },
+
+  {
+    id: "diamond-mesh-wire",
+
+    slug: "diamond-mesh-wire",
+
+    category: "การป้องกัน กั้นพื้นที่",
+
+    badge: "สินค้าใหม่",
+
+    title: "ลวดถักตาข่ายข้าวหลามตัด",
+
+    shortTitle: "ตาข่ายข้าวหลามตัด",
+
+    subtitle: "DIAMOND MESH WIRE (CHAIN-LINK)",
+
+    description:
+      "ลวดถักตาข่ายลายข้าวหลามตัด (Chain-Link) ผลิตจากลวดเหล็กคุณภาพดี ทอเป็นลายตาข่ายที่ยืดหยุ่นและแข็งแรง เหมาะสำหรับกั้นรั้วบ้าน โรงงาน สนามกีฬา และพื้นที่เกษตร",
+
+    shortDescription:
+      "ยืดหยุ่น แข็งแรง ใช้งานได้หลากหลาย",
+
+    startingPrice: 45,
+
+    currency: "THB",
+
+    coverImage: DiamondMeshWireImg,
+
+    gallery: [DiamondMeshWireImg],
+
+    sizes: [],
+
+    specs: [
+      {
+        label: "ประเภทสินค้า",
+        value: "ลวดถักตาข่ายข้าวหลามตัด",
+      },
+      {
+        label: "วัสดุ",
+        value: "ลวดเหล็กชุบสังกะสี",
+      },
+      {
+        label: "ลายตาข่าย",
+        value: "ข้าวหลามตัด (Chain-Link)",
+      },
+      {
+        label: "ขนาดตาข่ายและความกว้าง/ยาวม้วน",
+        value: "มีหลายขนาด ตามหน้างาน กรุณาสอบถามเจ้าหน้าที่",
+      },
+      {
+        label: "การใช้งาน",
+        value: "รั้วบ้าน โรงงาน สนามกีฬา พื้นที่เกษตร",
+      },
+    ],
+
+    features: [
+      {
+        title: "ยืดหยุ่น ติดตั้งง่าย",
+        description: "ทอลายข้าวหลามตัดมาตรฐาน",
+      },
+      {
+        title: "แข็งแรงทนทาน",
+        description: "ใช้งานได้หลากหลายรูปแบบ",
+      },
+    ],
+
+    seo: {
+      title: "ลวดถักตาข่ายข้าวหลามตัด | MACTECH",
+      description:
+        "จำหน่ายลวดถักตาข่ายข้าวหลามตัด (Chain-Link) แข็งแรง ยืดหยุ่น ใช้งานได้หลากหลาย",
+      keywords: ["ตาข่ายข้าวหลามตัด", "chain-link", "MACTECH"],
+    },
+  },
+
+  {
+    id: "knotted-mesh-wire",
+
+    slug: "knotted-mesh-wire",
+
+    category: "การป้องกัน กั้นพื้นที่",
+
+    badge: "สินค้าใหม่",
+
+    title: "ลวดถักตาข่ายถักปม",
+
+    shortTitle: "ตาข่ายถักปม",
+
+    subtitle: "KNOTTED MESH WIRE",
+
+    description:
+      "ลวดถักตาข่ายแบบถักปม ผลิตจากลวดเหล็กคุณภาพดี จุดเชื่อมถักปมแน่นหนา แข็งแรงทนทาน เหมาะสำหรับกั้นพื้นที่ฟาร์มปศุสัตว์ พื้นที่เกษตร และงานรั้วทั่วไป",
+
+    shortDescription:
+      "จุดถักปมแน่นหนา แข็งแรงทนทาน",
+
+    startingPrice: 50,
+
+    currency: "THB",
+
+    coverImage: KnottedMeshWireImg,
+
+    gallery: [KnottedMeshWireImg],
+
+    sizes: [],
+
+    specs: [
+      {
+        label: "ประเภทสินค้า",
+        value: "ลวดถักตาข่ายถักปม",
+      },
+      {
+        label: "วัสดุ",
+        value: "ลวดเหล็กชุบสังกะสี",
+      },
+      {
+        label: "ลักษณะจุดเชื่อม",
+        value: "ถักปม (Knotted)",
+      },
+      {
+        label: "ขนาดตาข่ายและความกว้าง/ยาวม้วน",
+        value: "มีหลายขนาด ตามหน้างาน กรุณาสอบถามเจ้าหน้าที่",
+      },
+      {
+        label: "การใช้งาน",
+        value: "ฟาร์มปศุสัตว์ พื้นที่เกษตร งานรั้วทั่วไป",
+      },
+    ],
+
+    features: [
+      {
+        title: "จุดถักปมแน่นหนา",
+        description: "ไม่หลุดลุ่ยง่าย",
+      },
+      {
+        title: "แข็งแรงทนทาน",
+        description: "เหมาะกับงานกลางแจ้ง",
+      },
+    ],
+
+    seo: {
+      title: "ลวดถักตาข่ายถักปม | MACTECH",
+      description:
+        "จำหน่ายลวดถักตาข่ายถักปม แข็งแรง ทนทาน เหมาะกับงานฟาร์มและพื้นที่เกษตร",
+      keywords: ["ตาข่ายถักปม", "knotted mesh", "MACTECH"],
+    },
+  },
+
+  {
+    id: "fence-wire-mesh",
+
+    slug: "fence-wire-mesh",
+
+    category: "การป้องกัน กั้นพื้นที่",
+
+    badge: "คุ้มค่า",
+
+    title: "ลวดตาข่ายรั้ว",
+
+    shortTitle: "ลวดตาข่ายรั้ว",
+
+    subtitle: "FENCE WIRE MESH",
+
+    description:
+      "ลวดตาข่ายรั้วอเนกประสงค์ ผลิตจากลวดเหล็กคุณภาพดี เหมาะสำหรับงานกั้นรั้วทั่วไป พื้นที่เกษตร และพื้นที่ก่อสร้าง ราคาคุ้มค่า",
+
+    shortDescription:
+      "อเนกประสงค์ ราคาคุ้มค่า",
+
+    startingPrice: 40,
+
+    currency: "THB",
+
+    coverImage: FenceWireMeshImg,
+
+    gallery: [FenceWireMeshImg],
+
+    sizes: [],
+
+    specs: [
+      {
+        label: "ประเภทสินค้า",
+        value: "ลวดตาข่ายรั้ว",
+      },
+      {
+        label: "วัสดุ",
+        value: "ลวดเหล็กชุบสังกะสี",
+      },
+      {
+        label: "ขนาดตาข่ายและความกว้าง/ยาวม้วน",
+        value: "มีหลายขนาด ตามหน้างาน กรุณาสอบถามเจ้าหน้าที่",
+      },
+      {
+        label: "การใช้งาน",
+        value: "งานรั้วทั่วไป พื้นที่เกษตร พื้นที่ก่อสร้าง",
+      },
+    ],
+
+    features: [
+      {
+        title: "อเนกประสงค์",
+        description: "ใช้งานได้หลากหลาย",
+      },
+      {
+        title: "ราคาคุ้มค่า",
+        description: "เหมาะกับงานทั่วไป",
+      },
+    ],
+
+    seo: {
+      title: "ลวดตาข่ายรั้ว | MACTECH",
+      description:
+        "จำหน่ายลวดตาข่ายรั้วอเนกประสงค์ ราคาคุ้มค่า เหมาะกับงานทั่วไป",
+      keywords: ["ลวดตาข่ายรั้ว", "ตาข่ายรั้ว", "MACTECH"],
+    },
+  },
+
+  {
+    id: "expanded-metal-mesh",
+
+    slug: "expanded-metal-mesh",
+
+    category: "ตะแกรงเหล็ก",
+
+    badge: "สินค้าใหม่",
+
+    title: "ตะแกรงเหล็กฉีก",
+
+    shortTitle: "เหล็กฉีก",
+
+    subtitle: "EXPANDED METAL MESH",
+
+    description:
+      "ตะแกรงเหล็กฉีก (Expanded Metal) ผลิตจากแผ่นเหล็กฉีกและยืดเป็นลายตาข่าย แข็งแรง ระบายอากาศและแสงได้ดี เหมาะสำหรับงานรั้ว บันได ทางเดิน และงานตกแต่ง",
+
+    shortDescription:
+      "แข็งแรง ระบายอากาศได้ดี",
+
+    startingPrice: 350,
+
+    currency: "THB",
+
+    coverImage: ExpandedMetalMeshImg,
+
+    gallery: [ExpandedMetalMeshImg],
+
+    sizes: [],
+
+    specs: [
+      {
+        label: "ประเภทสินค้า",
+        value: "ตะแกรงเหล็กฉีก",
+      },
+      {
+        label: "วัสดุ",
+        value: "แผ่นเหล็กฉีก (Expanded Metal)",
+      },
+      {
+        label: "ขนาดแผ่นและลายตาข่าย",
+        value: "มีหลายขนาด ตามหน้างาน กรุณาสอบถามเจ้าหน้าที่",
+      },
+      {
+        label: "การใช้งาน",
+        value: "งานรั้ว บันได ทางเดิน งานตกแต่ง",
+      },
+    ],
+
+    features: [
+      {
+        title: "ระบายอากาศ-แสงได้ดี",
+        description: "ลายตาข่ายโปร่ง",
+      },
+      {
+        title: "แข็งแรงทนทาน",
+        description: "เหมาะกับงานโครงสร้าง",
+      },
+    ],
+
+    seo: {
+      title: "ตะแกรงเหล็กฉีก | MACTECH",
+      description:
+        "จำหน่ายตะแกรงเหล็กฉีก (Expanded Metal) แข็งแรง ระบายอากาศได้ดี เหมาะกับงานรั้วและตกแต่ง",
+      keywords: ["ตะแกรงเหล็กฉีก", "expanded metal", "MACTECH"],
+    },
+  },
+
+  {
+    id: "worm-pattern-steel-grating",
+
+    slug: "worm-pattern-steel-grating",
+
+    category: "ตะแกรงเหล็ก",
+
+    badge: "สินค้าใหม่",
+
+    title: "ตะแกรงเหล็กตัวหนอน",
+
+    shortTitle: "เหล็กตัวหนอน",
+
+    subtitle: "WORM PATTERN STEEL GRATING",
+
+    description:
+      "ตะแกรงเหล็กลายตัวหนอน ผลิตจากเหล็กคุณภาพดี ลวดลายโดดเด่น แข็งแรง เหมาะสำหรับงานรั้ว งานตกแต่ง และงานก่อสร้างทั่วไป",
+
+    shortDescription:
+      "ลวดลายโดดเด่น แข็งแรง",
+
+    startingPrice: 320,
+
+    currency: "THB",
+
+    coverImage: WormPatternGratingImg,
+
+    gallery: [WormPatternGratingImg],
+
+    sizes: [],
+
+    specs: [
+      {
+        label: "ประเภทสินค้า",
+        value: "ตะแกรงเหล็กตัวหนอน",
+      },
+      {
+        label: "วัสดุ",
+        value: "เหล็กคุณภาพดี",
+      },
+      {
+        label: "ขนาดแผ่นและลวดลาย",
+        value: "มีหลายขนาด ตามหน้างาน กรุณาสอบถามเจ้าหน้าที่",
+      },
+      {
+        label: "การใช้งาน",
+        value: "งานรั้ว งานตกแต่ง งานก่อสร้างทั่วไป",
+      },
+    ],
+
+    features: [
+      {
+        title: "ลวดลายโดดเด่น",
+        description: "เพิ่มความสวยงามให้งานรั้ว",
+      },
+      {
+        title: "แข็งแรงทนทาน",
+        description: "เหมาะกับงานก่อสร้าง",
+      },
+    ],
+
+    seo: {
+      title: "ตะแกรงเหล็กตัวหนอน | MACTECH",
+      description:
+        "จำหน่ายตะแกรงเหล็กลายตัวหนอน แข็งแรง ลวดลายสวยงาม เหมาะกับงานรั้วและตกแต่ง",
+      keywords: ["ตะแกรงเหล็กตัวหนอน", "MACTECH"],
+    },
+  },
+
+  {
+    id: "arc-mesh-panel",
+
+    slug: "arc-mesh-panel",
+
+    category: "ตะแกรงเหล็ก",
+
+    badge: "แนะนำ",
+
+    title: "แผงตะแกรงอาร์ค",
+
+    shortTitle: "ตะแกรงอาร์ค",
+
+    subtitle: "ARC MESH PANEL",
+
+    description:
+      "แผงตะแกรงเหล็กทรงอาร์ค ดีไซน์โค้งสวยงามโดดเด่น ผลิตจากเหล็กคุณภาพดี แข็งแรง เหมาะสำหรับงานรั้วและงานตกแต่งที่ต้องการความสวยงามเป็นพิเศษ",
+
+    shortDescription:
+      "ดีไซน์โค้งสวยงาม โดดเด่น",
+
+    startingPrice: 380,
+
+    currency: "THB",
+
+    coverImage: ArcMeshPanelImg,
+
+    gallery: [ArcMeshPanelImg],
+
+    sizes: [],
+
+    specs: [
+      {
+        label: "ประเภทสินค้า",
+        value: "แผงตะแกรงอาร์ค",
+      },
+      {
+        label: "วัสดุ",
+        value: "เหล็กคุณภาพดี",
+      },
+      {
+        label: "ดีไซน์",
+        value: "ทรงอาร์คโค้ง",
+      },
+      {
+        label: "ขนาดแผง",
+        value: "มีหลายขนาด ตามหน้างาน กรุณาสอบถามเจ้าหน้าที่",
+      },
+      {
+        label: "การใช้งาน",
+        value: "งานรั้วและงานตกแต่งที่ต้องการความสวยงามเป็นพิเศษ",
+      },
+    ],
+
+    features: [
+      {
+        title: "ดีไซน์โค้งสวยงาม",
+        description: "โดดเด่นแตกต่างจากรั้วทั่วไป",
+      },
+      {
+        title: "แข็งแรงทนทาน",
+        description: "ผลิตจากเหล็กคุณภาพดี",
+      },
+    ],
+
+    seo: {
+      title: "แผงตะแกรงอาร์ค | MACTECH",
+      description:
+        "จำหน่ายแผงตะแกรงอาร์ค ดีไซน์โค้งสวยงาม แข็งแรง เหมาะกับงานรั้วพิเศษ",
+      keywords: ["แผงตะแกรงอาร์ค", "arc mesh panel", "MACTECH"],
     },
   },
 ];

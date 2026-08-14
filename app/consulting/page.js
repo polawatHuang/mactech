@@ -252,7 +252,7 @@ export default function ConsultingPage() {
       <section className="container-main px-6 pb-16 lg:px-14">
         <div className="relative overflow-hidden border border-white/15 bg-[#0b0b0b] p-8 sm:p-10">
           <Image
-            src="/images/store.png"
+            src="/images/store_new_2.png"
             alt=""
             fill
             className="object-cover opacity-25"

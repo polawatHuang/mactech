@@ -50,7 +50,7 @@ export default function HeroSection() {
         <div className="container-main px-6 md:px-14 relative z-10 flex h-full items-center">
           <div className="max-w-[560px]">
             {/* Logo */}
-            <div className="mb-8 flex items-center gap-4 lg:gap-5">
+            <div className="mb-8 mt-4 md:mt-0 flex items-center gap-4 lg:gap-5">
               <Image
                 src={MLogo}
                 alt="MACTECH"
@@ -58,12 +58,12 @@ export default function HeroSection() {
               />
 
               <div>
-                <h1 className="text-[38px] font-extrabold leading-none tracking-tight text-white sm:text-[46px] lg:text-[64px]">
+                <h1 className="text-[38px] font-extrabold leading-none tracking-tight text-white sm:text-[46px]">
                   MACTECH
                 </h1>
 
-                <p className="mt-2 text-[11px] font-semibold tracking-[0.22em] text-white lg:text-[22px]">
-                  STEEL FENCE SYSTEM
+                <p className="mt-2 text-[11px] font-semibold tracking-[0.22em] text-white lg:text-[15.25px]">
+                  STEEL FENCE SYSTEMS
                 </p>
               </div>
             </div>

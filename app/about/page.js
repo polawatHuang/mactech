@@ -118,7 +118,7 @@ export default function AboutPage() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10 pt-[76px] lg:pt-[86px]">
         <Image
-          src="/images/store.png"
+          src="/images/store_new_1.png"
           alt="MACTECH showroom"
           fill
           priority
@@ -149,7 +149,7 @@ export default function AboutPage() {
       <section className="container-main grid gap-10 px-6 py-14 lg:grid-cols-[.95fr_1.05fr] lg:px-14">
         <div className="relative min-h-[280px] overflow-hidden border border-white/15 bg-[#0b0b0b] sm:min-h-[360px]">
           <Image
-            src="/images/store2.png"
+            src="/images/store_new_2.png"
             alt="MACTECH showroom interior"
             fill
             className="object-cover"
@@ -294,7 +294,7 @@ export default function AboutPage() {
       <section className="container-main px-6 pb-16 lg:px-14">
         <div className="relative overflow-hidden border border-[#d4a63c]/35 bg-[#0b0b0b] p-8 sm:p-10">
           <Image
-            src="/images/store2.png"
+            src="/images/store_new_2.png"
             alt=""
             fill
             className="object-cover opacity-25"
