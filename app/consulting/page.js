@@ -131,7 +131,8 @@ export default function ConsultingPage() {
             </p>
 
             <h1 className="mt-4 text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
-              คำแนะนำจากผู้เชี่ยวชาญ
+              คำแนะนำจาก{" "}
+                <br className="lg:hidden" />ผู้เชี่ยวชาญ
               <br />
               <span className="text-[#d4a63c]">เพื่อรั้วที่ใช่ สำหรับคุณ</span>
             </h1>
