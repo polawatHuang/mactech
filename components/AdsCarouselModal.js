@@ -23,9 +23,8 @@ import Ad12 from "@/public/images/products/product-12.jpg";
 import Ad13 from "@/public/images/products/product-13.jpg";
 import Ad14 from "@/public/images/products/product-14.jpg";
 import Ad15 from "@/public/images/products/product-15.jpg";
-import Ad16 from "@/public/images/products/product-16.jpg";
 
-const ads = [Ad1, Ad2, Ad3, Ad4, Ad5, Ad6, Ad7, Ad8, Ad9, Ad10, Ad11, Ad12, Ad13, Ad14, Ad15, Ad16];
+const ads = [Ad1, Ad2, Ad3, Ad4, Ad5, Ad6, Ad7, Ad8, Ad9, Ad10, Ad11, Ad12, Ad13, Ad14, Ad15];
 const AUTOPLAY_MS = 4500;
 
 export default function AdsCarouselModal() {
