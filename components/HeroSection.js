@@ -19,13 +19,13 @@ const features = [
   },
   {
     title: "ดีไซน์สวยงาม",
-    desc: "หลากหลายสไตล์",
+    desc: "ทันสมัย หลากหลายสไตล์",
     icon: PencilSquareIcon,
     gold: false,
   },
   {
     title: "ติดตั้งง่าย",
-    desc: "พร้อมอุปกรณ์ครบชุด",
+    desc: "งบประมาณไม่บานปลาย",
     icon: WrenchScrewdriverIcon,
     gold: false,
   },
