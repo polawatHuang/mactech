@@ -272,16 +272,26 @@ export default function ConsultingPage() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              <a
-                href="tel:0652655539"
-                className="flex h-16 items-center justify-center gap-3 border border-[#d4a63c]/60 bg-black/40 text-lg font-bold"
-              >
-                <PhoneIcon className="h-7 w-7 text-[#d4a63c]" />
-                065-265-5539
-              </a>
+              <div className="flex flex-col justify-center gap-2 border border-[#d4a63c]/60 bg-black/40 px-4 py-3">
+                <a
+                  href="tel:0652655539"
+                  className="flex items-center gap-3 text-sm font-bold"
+                >
+                  <PhoneIcon className="h-5 w-5 shrink-0 text-[#d4a63c]" />
+                  065-265-5539 (คุณต่อ)
+                </a>
+
+                <a
+                  href="tel:0659925524"
+                  className="flex items-center gap-3 text-sm font-bold"
+                >
+                  <PhoneIcon className="h-5 w-5 shrink-0 text-[#d4a63c]" />
+                  065-992-5524 (ฝ่ายขาย)
+                </a>
+              </div>
 
               <a
-                href="https://line.me/ti/p/~mack.656"
+                href="https://line.me/R/ti/p/@930qheef"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-16 items-center justify-center gap-3 border border-[#d4a63c]/60 bg-black/40 text-lg font-bold"
@@ -289,7 +299,7 @@ export default function ConsultingPage() {
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d4a63c] text-xs font-black text-black">
                   LINE
                 </span>
-                mack.656
+                @mtthailand
               </a>
             </div>
           </div>

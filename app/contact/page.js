@@ -103,8 +103,18 @@ export default function ContactPage() {
           <div className="mt-3 h-px w-20 bg-[#d4a63c]" />
 
           <div className="mt-8 space-y-7">
-            <ContactItem icon={<PhoneIcon />} title="โทรศัพท์" value="065-265-5539" />
-            <ContactItem icon={<EnvelopeIcon />} title="อีเมล" value="mactech.fence@gmail.com" />
+            <ContactItem icon={<PhoneIcon />} title="โทรศัพท์ (คุณต่อ)" value="065-265-5539" />
+            <ContactItem icon={<PhoneIcon />} title="โทรศัพท์ (ฝ่ายขายและบริการ)" value="065-992-5524" />
+            <ContactItem
+              icon={
+                <span className="flex h-7 w-7 items-center justify-center rounded bg-[#00c300] text-[8px] font-black text-white">
+                  LINE
+                </span>
+              }
+              title="LINE"
+              value="@mtthailand"
+            />
+            <ContactItem icon={<EnvelopeIcon />} title="อีเมล" value="mactech.thailand@gmail.com" />
             <ContactItem icon={<MapPinIcon />} title="ที่อยู่บริษัท" value="219/2 หมู่ 12 ตำบลกระสัง อำเภอเมืองบุรีรัมย์ จังหวัดบุรีรัมย์ 31000" />
             <ContactItem icon={<ClockIcon />} title="เวลาทำการ" value="จันทร์ - เสาร์ 08:30 - 17:30 น." />
           </div>

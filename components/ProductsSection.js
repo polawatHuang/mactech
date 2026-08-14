@@ -7,8 +7,8 @@ import {
   ChevronRightIcon,
 } from "@heroicons/react/24/outline";
 import GalvanizedFence01 from "../public/products/แผงรั้วสำเร็จรูปกัลวาไนซ์/01.jpg";
-import BlackPeFence01 from "../public/products/แผงรั้วสำเร็จรูปชุบ PE สีดำ/01.jpg";
-import GreenPeFence01 from "../public/products/แผงรั้วสำเร็จรูปชุบ PE สีเขียว/01.jpg";
+import BlackPeFence01 from "../public/products/แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE สีดำ/01.jpg";
+import GreenPeFence01 from "../public/products/แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE สีเขียว/01.jpg";
 import StainlessMeshImg from "../public/products/ตาข่ายกรงไก่สแตนเลส.jpg";
 import ColdGalvanizedMeshImg from "../public/products/ตาข่ายกรงไก่ชุบเย็น.jpg";
 import HotGalvanizedMeshImg from "../public/products/ตาข่ายกรงไก่ชุบร้อน.jpg";
@@ -29,34 +29,14 @@ const products = [
     href: "/products/galvanized-fence",
   },
   {
-    title: "แผงรั้ว เคลือบสีดำ",
+    title: "แผงรั้วกัลวาไนซ์ชุบสีดำ",
     image: BlackPeFence01,
     href: "/products/black-pe-fence",
   },
   {
-    title: "แผงรั้ว เคลือบสีเขียว",
+    title: "แผงรั้วกัลวาไนซ์ชุบสีเขียว",
     image: GreenPeFence01,
     href: "/products/green-pe-fence",
-  },
-  {
-    title: "ตาข่ายกรงไก่แสตนเลส",
-    image: StainlessMeshImg,
-    href: "/products/stainless-chicken-wire-mesh",
-  },
-  {
-    title: "ตาข่ายกรงไก่ชุบเย็น",
-    image: ColdGalvanizedMeshImg,
-    href: "/products/galvanized-chicken-wire-mesh",
-  },
-  {
-    title: "ตาข่ายกรงไก่ชุบร้อน",
-    image: HotGalvanizedMeshImg,
-    href: "/products/hot-dip-galvanized-chicken-wire-mesh",
-  },
-  {
-    title: "ตาข่ายกรงไก่ PVC",
-    image: PvcMeshImg,
-    href: "/products/pvc-chicken-wire-mesh",
   },
   {
     title: "ลวดหนาม",
@@ -79,9 +59,29 @@ const products = [
     href: "/products/fence-wire-mesh",
   },
   {
-    title: "ตะแกรงเหล็กฉีก",
-    image: ExpandedMetalMeshImg,
-    href: "/products/expanded-metal-mesh",
+    title: "ตาข่ายกรงไก่แสตนเลส",
+    image: StainlessMeshImg,
+    href: "/products/stainless-chicken-wire-mesh",
+  },
+  {
+    title: "ตาข่ายกรงไก่ชุบร้อน",
+    image: HotGalvanizedMeshImg,
+    href: "/products/hot-dip-galvanized-chicken-wire-mesh",
+  },
+  {
+    title: "ตาข่ายกรงไก่ชุบเย็น",
+    image: ColdGalvanizedMeshImg,
+    href: "/products/galvanized-chicken-wire-mesh",
+  },
+  {
+    title: "ตาข่ายกรงไก่ PVC",
+    image: PvcMeshImg,
+    href: "/products/pvc-chicken-wire-mesh",
+  },
+  {
+    title: "แผงตะแกรงอาร์ค",
+    image: ArcMeshPanelImg,
+    href: "/products/arc-mesh-panel",
   },
   {
     title: "ตะแกรงเหล็กตัวหนอน",
@@ -89,25 +89,10 @@ const products = [
     href: "/products/worm-pattern-steel-grating",
   },
   {
-    title: "แผงตะแกรงอาร์ค",
-    image: ArcMeshPanelImg,
-    href: "/products/arc-mesh-panel",
+    title: "ตะแกรงเหล็กฉีก",
+    image: ExpandedMetalMeshImg,
+    href: "/products/expanded-metal-mesh",
   },
-//   {
-//     title: "แผงรั้ว แบบประหยัด",
-//     image: "/images/product-economy.jpg",
-//     href: "/products/economy",
-//   },
-//   {
-//     title: "เสา / อุปกรณ์",
-//     image: "/images/product-parts.jpg",
-//     href: "/products/accessories",
-//   },
-//   {
-//     title: "ชุดประตูรั้ว",
-//     image: "/images/product-gate.jpg",
-//     href: "/products/gate",
-//   },
 ];
 
 const AUTOPLAY_MS = 3000;

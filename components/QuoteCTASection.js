@@ -1,9 +1,38 @@
+"use client";
+
 import Link from "next/link";
-import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
+import { useEffect, useRef, useState } from "react";
+import {
+  ChatBubbleLeftRightIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+} from "@heroicons/react/24/outline";
 import Image from "next/image";
-import FenceGroupImg from "../public/ogimage.png";
+import View4 from "../public/images/views/01.jpg";
+import View3 from "../public/images/views/02.jpg";
+import View2 from "../public/images/views/03.jpg";
+import View1 from "../public/images/views/04.jpg";
+
+const views = [View1, View2, View3, View4];
+const AUTOPLAY_MS = 4000;
 
 export default function QuoteCTASection() {
+  const [index, setIndex] = useState(0);
+  const timerRef = useRef(null);
+
+  useEffect(() => {
+    timerRef.current = setInterval(() => {
+      setIndex((prev) => (prev + 1) % views.length);
+    }, AUTOPLAY_MS);
+
+    return () => clearInterval(timerRef.current);
+  }, []);
+
+  const goTo = (nextIndex) => {
+    clearInterval(timerRef.current);
+    setIndex((nextIndex + views.length) % views.length);
+  };
+
   return (
     <section className="bg-[#070707] py-8 sm:py-10 lg:py-12">
       <div className="container-main">
@@ -12,13 +41,52 @@ export default function QuoteCTASection() {
 
           <div className="relative z-10 grid items-center gap-8 px-6 py-8 sm:px-10 lg:grid-cols-[1.05fr_.95fr] lg:px-14 lg:py-10">
             <div className="flex justify-center lg:justify-start">
-              <Image
-                src={FenceGroupImg}
-                alt="MACTECH fence products"
-                className="w-full max-w-[520px] object-contain"
-                width={520}
-                height={300}
-              />
+              <div className="relative aspect-[4/3] w-full max-w-[520px] overflow-hidden border border-white/10 bg-black">
+                {views.map((img, i) => (
+                  <Image
+                    key={i}
+                    src={img}
+                    alt="MACTECH fence products"
+                    fill
+                    priority={i === 0}
+                    className={`object-cover transition-opacity duration-700 ${
+                      i === index ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                ))}
+
+                <button
+                  type="button"
+                  onClick={() => goTo(index - 1)}
+                  aria-label="รูปก่อนหน้า"
+                  className="absolute left-2 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center border border-white/20 bg-black/50 text-white transition hover:border-[#d4a63c] hover:text-[#d4a63c]"
+                >
+                  <ChevronLeftIcon className="h-5 w-5" />
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => goTo(index + 1)}
+                  aria-label="รูปถัดไป"
+                  className="absolute right-2 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center border border-white/20 bg-black/50 text-white transition hover:border-[#d4a63c] hover:text-[#d4a63c]"
+                >
+                  <ChevronRightIcon className="h-5 w-5" />
+                </button>
+
+                <div className="absolute bottom-3 left-0 right-0 flex items-center justify-center gap-2">
+                  {views.map((_, i) => (
+                    <button
+                      key={i}
+                      type="button"
+                      onClick={() => goTo(i)}
+                      aria-label={`ไปที่รูปที่ ${i + 1}`}
+                      className={`h-2 w-2 transition ${
+                        i === index ? "bg-[#d4a63c]" : "bg-white/40"
+                      }`}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
 
             <div className="text-center lg:text-left">
@@ -45,7 +113,7 @@ export default function QuoteCTASection() {
                 </Link>
 
                 <a
-                  href="https://line.me/ti/p/~mack.656"
+                  href="https://line.me/R/ti/p/@930qheef"
                   target="_blank"
                   rel="noreferrer"
                   className="flex h-12 items-center justify-center gap-2 border border-white/45 px-8 text-sm font-bold text-white transition hover:border-[#d4a63c] hover:text-[#d4a63c]"

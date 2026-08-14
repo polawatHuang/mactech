@@ -8,7 +8,7 @@ import {
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import MLogo from "../public/images/m_logo.webp";
-import Bg from "../public/images/store.png";
+import Bg from "../public/images/mactech_store.png";
 
 const features = [
   {
@@ -49,39 +49,21 @@ export default function HeroSection() {
         {/* Content */}
         <div className="container-main px-6 md:px-14 relative z-10 flex h-full items-center">
           <div className="max-w-[560px]">
-            {/* Logo */}
-            <div className="mb-8 mt-4 md:mt-0 flex items-center gap-4 lg:gap-5">
-              <Image
-                src={MLogo}
-                alt="MACTECH"
-                className="h-[44px] w-[44px] object-contain sm:h-[56px] sm:w-[56px] lg:h-[102px] lg:w-[102px]"
-              />
-
-              <div>
-                <h1 className="text-[38px] font-extrabold leading-none tracking-tight text-white sm:text-[46px]">
-                  MACTECH
-                </h1>
-
-                <p className="mt-2 text-[11px] font-semibold tracking-[0.22em] text-white lg:text-[15.25px]">
-                  STEEL FENCE SYSTEMS
-                </p>
-              </div>
-            </div>
 
             {/* Title */}
             <div className="mb-5">
-              <h2 className="text-[42px] font-extrabold leading-[1.05] tracking-[-0.03em] text-white sm:text-[56px] lg:text-[74px]">
-                ผู้นำระบบรั้วเหล็ก
+              <h2 className="text-[42px] font-extrabold leading-[1.5] tracking-[-0.03em] text-white sm:text-[36px] lg:text-[54px]">
+                ผู้นำระบบรั้วอุตสาหกรรม รั้วสำเร็จรูป
               </h2>
 
-              <h2 className="mt-1 text-[42px] font-extrabold leading-[1.05] tracking-[-0.03em] text-[#d4a63c] sm:text-[56px] lg:text-[74px]">
+              <h2 className="mt-1 text-[42px] font-extrabold leading-[1.05] tracking-[-0.03em] text-[#d4a63c] sm:text-[36px] lg:text-[54px]">
                 คุณภาพสูง
               </h2>
             </div>
 
             {/* Description */}
             <p className="mb-10 max-w-[520px] text-[15px] leading-relaxed text-white/78 sm:text-[17px] lg:text-[20px]">
-              ครบครับทุกความต้องการ รั้วสวย แข็งแรง ทนทาน
+              ครบครัน ตอบโจทย์ทุกการใช้งาน สวย แข็งแรง ทนทานต่อการใช้งานในระยะยาว
             </p>
 
             {/* Features */}

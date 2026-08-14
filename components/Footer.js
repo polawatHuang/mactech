@@ -18,19 +18,19 @@ const mainMenus = [
 
 const products = [
   { name: "แผงรั้วสำเร็จรูปกัลวาไนซ์", href: "/products/galvanized-fence" },
-  { name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE ดำ", href: "/products/black-pe-fence" },
-  { name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE เขียว", href: "/products/green-pe-fence" },
-  { name: "ตาข่ายกรงไก่แสตนเลส", href: "/products/stainless-chicken-wire-mesh" },
-  { name: "ตาข่ายกรงไก่ชุบเย็น", href: "/products/galvanized-chicken-wire-mesh" },
-  { name: "ตาข่ายกรงไก่ชุบร้อน", href: "/products/hot-dip-galvanized-chicken-wire-mesh" },
-  { name: "ตาข่ายกรงไก่ PVC", href: "/products/pvc-chicken-wire-mesh" },
+  { name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE สีดำ", href: "/products/black-pe-fence" },
+  { name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE สีเขียว", href: "/products/green-pe-fence" },
   { name: "ลวดหนาม", href: "/products/barbed-wire" },
   { name: "ลวดถักตาข่ายข้าวหลามตัด", href: "/products/diamond-mesh-wire" },
   { name: "ลวดถักตาข่ายถักปม", href: "/products/knotted-mesh-wire" },
   { name: "ลวดตาข่ายรั้ว", href: "/products/fence-wire-mesh" },
-  { name: "ตะแกรงเหล็กฉีก", href: "/products/expanded-metal-mesh" },
-  { name: "ตะแกรงเหล็กตัวหนอน", href: "/products/worm-pattern-steel-grating" },
+  { name: "ตาข่ายกรงไก่แสตนเลส", href: "/products/stainless-chicken-wire-mesh" },
+  { name: "ตาข่ายกรงไก่ชุบร้อน", href: "/products/hot-dip-galvanized-chicken-wire-mesh" },
+  { name: "ตาข่ายกรงไก่ชุบเย็น", href: "/products/galvanized-chicken-wire-mesh" },
+  { name: "ตาข่ายกรงไก่ PVC", href: "/products/pvc-chicken-wire-mesh" },
   { name: "แผงตะแกรงอาร์ค", href: "/products/arc-mesh-panel" },
+  { name: "ตะแกรงเหล็กตัวหนอน", href: "/products/worm-pattern-steel-grating" },
+  { name: "ตะแกรงเหล็กฉีก", href: "/products/expanded-metal-mesh" },
 ];
 
 export default function Footer() {
@@ -62,24 +62,29 @@ export default function Footer() {
             <div className="mt-5 space-y-3 text-sm text-white/75">
               <a href="tel:0652655539" className="flex items-center gap-3">
                 <PhoneIcon className="h-5 w-5 text-[#d4a63c]" />
-                065-2655539
+                065-265-5539 (คุณต่อ)
+              </a>
+
+              <a href="tel:0659925524" className="flex items-center gap-3">
+                <PhoneIcon className="h-5 w-5 text-[#d4a63c]" />
+                065-992-5524 (ฝ่ายขายและบริการ)
               </a>
 
               <div className="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~mack.656" target="_blank" rel="noreferrer" className="flex items-center gap-3">
+                <a href="https://line.me/R/ti/p/@930qheef" target="_blank" rel="noreferrer" className="flex items-center gap-3">
                 <span className="flex h-5 w-5 text-[5px] items-center justify-center rounded bg-[#00c300] font-black text-white">
                   LINE
                 </span>
-                mack.656
+                @mtthailand
                 </a>
               </div>
 
               <a
-                href="mailto:mactech.fence@gmail.com"
+                href="mailto:mactech.thailand@gmail.com"
                 className="flex items-center gap-3"
               >
                 <EnvelopeIcon className="h-5 w-5 text-[#d4a63c]" />
-                mactech.fence@gmail.com
+                mactech.thailand@gmail.com
               </a>
 
               <div className="flex items-center gap-3">

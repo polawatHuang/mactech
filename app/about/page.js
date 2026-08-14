@@ -320,12 +320,12 @@ export default function AboutPage() {
                   ขอใบเสนอราคา
                 </Link>
 
-                <a
-                  href="tel:0652655539"
+                <Link
+                  href="/contact"
                   className="flex h-12 items-center justify-center border border-white/25 px-7 font-bold text-white transition hover:border-[#d4a63c] hover:text-[#d4a63c]"
                 >
                   ติดต่อเรา
-                </a>
+                </Link>
               </div>
             </div>
 

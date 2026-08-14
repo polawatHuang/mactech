@@ -22,12 +22,12 @@ const productCategories = [
         desc: "แข็งแรง ทนสนิม สำหรับงานมาตรฐาน",
       },
       {
-        name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE ดำ",
+        name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE สีดำ",
         href: "/products/black-pe-fence",
         desc: "โทนดำพรีเมียม เหมาะกับบ้านและโครงการ",
       },
       {
-        name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE เขียว",
+        name: "แผงรั้วสำเร็จรูปกัลวาไนซ์ชุบ PE สีเขียว",
         href: "/products/green-pe-fence",
         desc: "สีเขียวกลมกลืน เหมาะกับสวนและพื้นที่ภายนอก",
       },
@@ -67,14 +67,14 @@ const productCategories = [
         desc: "ทนสนิม ทนความชื้น ใช้งานได้ยาวนาน",
       },
       {
-        name: "ตาข่ายกรงไก่ชุบเย็น",
-        href: "/products/galvanized-chicken-wire-mesh",
-        desc: "ผิวเรียบ ป้องกันสนิม ราคาคุ้มค่า",
-      },
-      {
         name: "ตาข่ายกรงไก่ชุบร้อน",
         href: "/products/hot-dip-galvanized-chicken-wire-mesh",
         desc: "เคลือบสังกะสีหนา ทนสนิมสูงสุด",
+      },
+      {
+        name: "ตาข่ายกรงไก่ชุบเย็น",
+        href: "/products/galvanized-chicken-wire-mesh",
+        desc: "ผิวเรียบ ป้องกันสนิม ราคาคุ้มค่า",
       },
       {
         name: "ตาข่ายกรงไก่ PVC",
@@ -87,9 +87,9 @@ const productCategories = [
     category: "ตะแกรงเหล็ก",
     items: [
       {
-        name: "ตะแกรงเหล็กฉีก",
-        href: "/products/expanded-metal-mesh",
-        desc: "แข็งแรง ระบายอากาศได้ดี",
+        name: "แผงตะแกรงอาร์ค",
+        href: "/products/arc-mesh-panel",
+        desc: "ดีไซน์โค้งสวยงาม โดดเด่น",
       },
       {
         name: "ตะแกรงเหล็กตัวหนอน",
@@ -97,9 +97,9 @@ const productCategories = [
         desc: "ลวดลายโดดเด่น แข็งแรง",
       },
       {
-        name: "แผงตะแกรงอาร์ค",
-        href: "/products/arc-mesh-panel",
-        desc: "ดีไซน์โค้งสวยงาม โดดเด่น",
+        name: "ตะแกรงเหล็กฉีก",
+        href: "/products/expanded-metal-mesh",
+        desc: "แข็งแรง ระบายอากาศได้ดี",
       },
     ],
   },
@@ -236,12 +236,47 @@ export default function Header() {
             ขอใบเสนอราคา
           </Link>
 
-          <a
-            href="tel:0652655539"
-            className="hidden h-10 w-10 items-center justify-center border border-[#d4a63c] text-[#d4a63c] transition hover:bg-[#d4a63c] hover:text-black sm:flex"
-          >
-            <PhoneIcon className="h-5 w-5" />
-          </a>
+          <Popover className="relative hidden sm:block">
+            {({ open }) => (
+              <>
+                <Popover.Button
+                  className={`flex h-10 w-10 items-center justify-center border border-[#d4a63c] text-[#d4a63c] transition ${
+                    open ? "bg-[#d4a63c] text-black" : "hover:bg-[#d4a63c] hover:text-black"
+                  }`}
+                >
+                  <PhoneIcon className="h-5 w-5" />
+                </Popover.Button>
+
+                <Transition
+                  as={Fragment}
+                  enter="transition ease-out duration-200"
+                  enterFrom="opacity-0 translate-y-2 scale-95"
+                  enterTo="opacity-100 translate-y-0 scale-100"
+                  leave="transition ease-in duration-150"
+                  leaveFrom="opacity-100 translate-y-0 scale-100"
+                  leaveTo="opacity-0 translate-y-2 scale-95"
+                >
+                  <Popover.Panel className="absolute right-0 top-12 w-64 border border-[#d4a63c]/30 bg-[#080808] p-2 shadow-[0_24px_80px_rgba(0,0,0,.65)]">
+                    <a
+                      href="tel:0652655539"
+                      className="block border border-transparent px-3 py-2 transition hover:border-[#d4a63c]/25 hover:bg-[#d4a63c]/10"
+                    >
+                      <p className="text-xs text-white/55">คุณต่อ</p>
+                      <p className="text-sm font-bold text-white">065-265-5539</p>
+                    </a>
+
+                    <a
+                      href="tel:0659925524"
+                      className="block border border-transparent px-3 py-2 transition hover:border-[#d4a63c]/25 hover:bg-[#d4a63c]/10"
+                    >
+                      <p className="text-xs text-white/55">ฝ่ายขายและบริการ</p>
+                      <p className="text-sm font-bold text-white">065-992-5524</p>
+                    </a>
+                  </Popover.Panel>
+                </Transition>
+              </>
+            )}
+          </Popover>
 
           <button
             type="button"
@@ -349,7 +384,7 @@ export default function Header() {
             ))}
           </div>
 
-          <div className="mt-6 grid grid-cols-[1fr_48px] gap-3">
+          <div className="mt-6 space-y-3">
             <Link
               href="/contact"
               onClick={() => setMobileOpen(false)}
@@ -358,12 +393,23 @@ export default function Header() {
               ขอใบเสนอราคา
             </Link>
 
-            <a
-              href="tel:0652655539"
-              className="flex h-12 items-center justify-center border border-[#d4a63c] text-[#d4a63c]"
-            >
-              <PhoneIcon className="h-5 w-5" />
-            </a>
+            <div className="grid grid-cols-2 gap-3">
+              <a
+                href="tel:0652655539"
+                className="flex h-12 flex-col items-center justify-center border border-[#d4a63c] px-2 text-[#d4a63c]"
+              >
+                <span className="text-[10px] text-[#d4a63c]/70">คุณต่อ</span>
+                <span className="text-xs font-bold">065-265-5539</span>
+              </a>
+
+              <a
+                href="tel:0659925524"
+                className="flex h-12 flex-col items-center justify-center border border-[#d4a63c] px-2 text-[#d4a63c]"
+              >
+                <span className="text-[10px] text-[#d4a63c]/70">ฝ่ายขาย</span>
+                <span className="text-xs font-bold">065-992-5524</span>
+              </a>
+            </div>
           </div>
         </Dialog.Panel>
       </Dialog>
