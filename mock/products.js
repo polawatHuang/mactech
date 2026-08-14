@@ -5,10 +5,6 @@ import BlackPeFence02 from "@/public/products/แผงรั้วสำเร�
 import GreenPeFence01 from "@/public/products/แผงรั้วสำเร็จรูปชุบ PE สีเขียว/01.jpg";
 import GreenPeFence02 from "@/public/products/แผงรั้วสำเร็จรูปชุบ PE สีเขียว/02.jpg";
 
-import FenceSize1 from "@/public/images/FenceSize1.png";
-import FenceSize2 from "@/public/images/FenceSize2.png";
-import FenceSize3 from "@/public/images/FenceSize3.png";
-
 import PostGalvanized from "@/public/images/wall-white.png";
 import BasePlate from "@/public/images/wall-white.png";
 import Bolt from "@/public/images/wall-white.png";
@@ -61,22 +57,13 @@ export const products = [
     ],
 
     sizes: [
-      {
-        height: "2.00 เมตร",
-        width: "2.40 เมตร/แผง",
-        image: FenceSize1,
-      },
-      {
-        height: "1.50 เมตร",
-        width: "2.40 เมตร/แผง",
-        image: FenceSize2,
-      },
-      {
-        height: "1.20 เมตร",
-        width: "2.40 เมตร/แผง",
-        image: FenceSize3,
-      },
+      { height: "2.00 เมตร" },
+      { height: "1.50 เมตร" },
+      { height: "1.20 เมตร" },
+      { height: "1.00 เมตร" },
     ],
+
+    lengths: ["2.40 เมตร/แผง", "2.50 เมตร/แผง", "3.00 เมตร/แผง"],
 
     specs: [
       {
@@ -90,11 +77,11 @@ export const products = [
       },
       {
         label: "ความสูง",
-        value: "2.00 เมตร / 1.50 เมตร / 1.20 เมตร",
+        value: "2.00 เมตร / 1.50 เมตร / 1.20 เมตร / 1.00 เมตร",
       },
       {
         label: "ความยาว",
-        value: "2.40 เมตร/แผง",
+        value: "2.40 เมตร/แผง / 2.50 เมตร/แผง / 3.00 เมตร/แผง",
       },
       {
         label: "ขนาดช่องลวด",
@@ -197,22 +184,13 @@ export const products = [
     ],
 
     sizes: [
-      {
-        height: "2.00 เมตร",
-        width: "2.40 เมตร/แผง",
-        image: FenceSize1,
-      },
-      {
-        height: "1.50 เมตร",
-        width: "2.40 เมตร/แผง",
-        image: FenceSize2,
-      },
-      {
-        height: "1.20 เมตร",
-        width: "2.40 เมตร/แผง",
-        image: FenceSize3,
-      },
+      { height: "2.00 เมตร" },
+      { height: "1.50 เมตร" },
+      { height: "1.20 เมตร" },
+      { height: "1.00 เมตร" },
     ],
+
+    lengths: ["2.40 เมตร/แผง", "2.50 เมตร/แผง", "3.00 เมตร/แผง"],
 
     specs: [
       {
@@ -226,11 +204,11 @@ export const products = [
       },
       {
         label: "ความสูง",
-        value: "2.00 เมตร / 1.50 เมตร / 1.20 เมตร",
+        value: "2.00 เมตร / 1.50 เมตร / 1.20 เมตร / 1.00 เมตร",
       },
       {
         label: "ความยาว",
-        value: "2.40 เมตร/แผง",
+        value: "2.40 เมตร/แผง / 2.50 เมตร/แผง / 3.00 เมตร/แผง",
       },
       {
         label: "ขนาดช่องลวด",
@@ -331,22 +309,13 @@ export const products = [
     ],
 
     sizes: [
-      {
-        height: "2.00 เมตร",
-        width: "2.40 เมตร/แผง",
-        image: FenceSize1,
-      },
-      {
-        height: "1.50 เมตร",
-        width: "2.40 เมตร/แผง",
-        image: FenceSize2,
-      },
-      {
-        height: "1.20 เมตร",
-        width: "2.40 เมตร/แผง",
-        image: FenceSize3,
-      },
+      { height: "2.00 เมตร" },
+      { height: "1.50 เมตร" },
+      { height: "1.20 เมตร" },
+      { height: "1.00 เมตร" },
     ],
+
+    lengths: ["2.40 เมตร/แผง", "2.50 เมตร/แผง", "3.00 เมตร/แผง"],
 
     specs: [
       {
@@ -360,11 +329,11 @@ export const products = [
       },
       {
         label: "ความสูง",
-        value: "2.00 เมตร / 1.50 เมตร / 1.20 เมตร",
+        value: "2.00 เมตร / 1.50 เมตร / 1.20 เมตร / 1.00 เมตร",
       },
       {
         label: "ความยาว",
-        value: "2.40 เมตร/แผง",
+        value: "2.40 เมตร/แผง / 2.50 เมตร/แผง / 3.00 เมตร/แผง",
       },
       {
         label: "ขนาดช่องลวด",

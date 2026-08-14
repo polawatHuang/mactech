@@ -33,8 +33,8 @@ export default function ProductDetailPage({ params }) {
   );
 
   const isMeshOrWireProduct =
-    product?.category === "ตาข่ายกรงไก่" ||
-    product?.category === "ลวดหนาม";
+    product?.category !==
+    "แผงรั้วสำเร็จรูป แผงรั้วอุตสาหกรรม แผงรั้วทางด่วน";
 
   const [activeImage, setActiveImage] = useState(
     product?.gallery?.[0]
@@ -42,6 +42,10 @@ export default function ProductDetailPage({ params }) {
 
   const [selectedHeight, setSelectedHeight] = useState(
     product?.sizes?.[0]?.height
+  );
+
+  const [selectedLength, setSelectedLength] = useState(
+    product?.lengths?.[0]
   );
 
   const [qty, setQty] = useState(1);
@@ -205,9 +209,29 @@ export default function ProductDetailPage({ params }) {
                 ความยาว
               </p>
 
-              <div className="inline-flex h-12 items-center border border-[#d4a63c]/60 px-5 text-sm font-bold text-white">
-                {isMeshOrWireProduct ? "-" : "2.40 เมตร/แผง"}
-              </div>
+              {isMeshOrWireProduct ? (
+                <div className="inline-flex h-12 items-center border border-[#d4a63c]/60 px-5 text-sm font-bold text-white">
+                  -
+                </div>
+              ) : (
+                <div className="grid grid-cols-3 gap-3">
+                  {product.lengths.map((length) => (
+                    <button
+                      key={length}
+                      onClick={() =>
+                        setSelectedLength(length)
+                      }
+                      className={`h-12 border text-sm font-bold transition ${
+                        selectedLength === length
+                          ? "border-[#d4a63c] text-[#d4a63c]"
+                          : "border-white/20 text-white/75 hover:border-[#d4a63c]"
+                      }`}
+                    >
+                      {length}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* PRICE */}
@@ -335,13 +359,13 @@ export default function ProductDetailPage({ params }) {
                     สูง {item.height}
                   </div>
 
-                  <Image
-                    src={item.image}
-                    alt={item.height}
-                    className="w-full object-contain"
-                    width={900}
-                    height={300}
-                  />
+                  <div>
+                    <FencePanelDiagram heightLabel={item.height} />
+
+                    <p className="mt-2 text-center text-xs text-black/60">
+                      ความยาว: {product.lengths.join(" / ")}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -423,5 +447,89 @@ function FeatureCard({ title, desc }) {
         </p>
       </div>
     </div>
+  );
+}
+
+function FencePanelDiagram({ heightLabel }) {
+  const meters = parseFloat(heightLabel) || 2;
+  const scale = 55;
+  const drawnHeight = Math.max(meters * scale, 30);
+  const groundY = 150;
+  const topY = groundY - drawnHeight;
+  const postX1 = 50;
+  const postX2 = 320;
+  const postWidth = 10;
+  const panelLeft = postX1 + postWidth;
+  const panelRight = postX2;
+  const midY = (topY + groundY) / 2;
+
+  const verticalWires = 9;
+  const horizontalFractions = [0.15, 0.5, 0.85];
+
+  return (
+    <svg viewBox="0 0 370 170" className="h-40 w-full">
+      {/* ground line */}
+      <line x1="10" y1={groundY} x2="360" y2={groundY} stroke="#000" strokeWidth="2" />
+
+      {/* height dimension line */}
+      <line x1="25" y1={topY} x2="25" y2={groundY} stroke="#000" strokeWidth="1.5" />
+      <line x1="20" y1={topY} x2="30" y2={topY} stroke="#000" strokeWidth="1.5" />
+      <line x1="20" y1={groundY} x2="30" y2={groundY} stroke="#000" strokeWidth="1.5" />
+      <text
+        x="0"
+        y="0"
+        textAnchor="middle"
+        fontSize="11"
+        fontWeight="700"
+        fill="#000"
+        transform={`translate(14 ${midY}) rotate(-90)`}
+      >
+        {heightLabel}
+      </text>
+
+      {/* mesh panel */}
+      <rect
+        x={panelLeft}
+        y={topY}
+        width={panelRight - panelLeft}
+        height={drawnHeight}
+        fill="#f3f4f6"
+        stroke="#000"
+        strokeWidth="1"
+      />
+
+      {Array.from({ length: verticalWires }).map((_, i) => {
+        const x =
+          panelLeft +
+          ((panelRight - panelLeft) / (verticalWires + 1)) * (i + 1);
+        return (
+          <line
+            key={i}
+            x1={x}
+            y1={topY}
+            x2={x}
+            y2={groundY}
+            stroke="#9ca3af"
+            strokeWidth="1.5"
+          />
+        );
+      })}
+
+      {horizontalFractions.map((f, i) => (
+        <line
+          key={i}
+          x1={panelLeft}
+          y1={topY + drawnHeight * f}
+          x2={panelRight}
+          y2={topY + drawnHeight * f}
+          stroke="#000"
+          strokeWidth="2.5"
+        />
+      ))}
+
+      {/* posts */}
+      <rect x={postX1} y={topY} width={postWidth} height={drawnHeight} fill="#9ca3af" />
+      <rect x={postX2} y={topY} width={postWidth} height={drawnHeight} fill="#9ca3af" />
+    </svg>
   );
 }
