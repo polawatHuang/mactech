@@ -116,7 +116,7 @@ export default function ContactPage() {
             />
             <ContactItem icon={<EnvelopeIcon />} title="อีเมล" value="mactech.thailand@gmail.com" />
             <ContactItem icon={<MapPinIcon />} title="ที่อยู่บริษัท" value="219/2 หมู่ 12 ตำบลกระสัง อำเภอเมืองบุรีรัมย์ จังหวัดบุรีรัมย์ 31000" />
-            <ContactItem icon={<ClockIcon />} title="เวลาทำการ" value="จันทร์ - เสาร์ 08:30 - 17:30 น." />
+            <ContactItem icon={<ClockIcon />} title="เวลาทำการ" value="จันทร์ - เสาร์ 09:00 - 18:00 น." />
           </div>
         </div>
 
