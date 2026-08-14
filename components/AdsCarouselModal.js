@@ -97,12 +97,11 @@ export default function AdsCarouselModal() {
                 <XMarkIcon className="h-5 w-5" />
               </button>
 
-              <div className="relative aspect-[4/5] w-full overflow-hidden bg-black">
+              <div className="relative w-full overflow-hidden bg-black">
                 <Image
                   src={ads[index]}
                   alt={`โปรโมชั่น ${index + 1}`}
-                  className="h-full w-full object-cover"
-                  fill
+                  className="h-auto w-full"
                   priority
                 />
 
