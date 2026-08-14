@@ -14,8 +14,18 @@ import Ad3 from "@/public/images/products/product-3.jpg";
 import Ad4 from "@/public/images/products/product-4.jpg";
 import Ad5 from "@/public/images/products/product-5.jpg";
 import Ad6 from "@/public/images/products/product-6.jpg";
+import Ad7 from "@/public/images/products/product-7.jpg";
+import Ad8 from "@/public/images/products/product-8.jpg";
+import Ad9 from "@/public/images/products/product-9.jpg";
+import Ad10 from "@/public/images/products/product-10.jpg";
+import Ad11 from "@/public/images/products/product-11.jpg";
+import Ad12 from "@/public/images/products/product-12.jpg";
+import Ad13 from "@/public/images/products/product-13.jpg";
+import Ad14 from "@/public/images/products/product-14.jpg";
+import Ad15 from "@/public/images/products/product-15.jpg";
+import Ad16 from "@/public/images/products/product-16.jpg";
 
-const ads = [Ad1, Ad2, Ad3, Ad4, Ad5, Ad6];
+const ads = [Ad1, Ad2, Ad3, Ad4, Ad5, Ad6, Ad7, Ad8, Ad9, Ad10, Ad11, Ad12, Ad13, Ad14, Ad15, Ad16];
 const AUTOPLAY_MS = 4500;
 
 export default function AdsCarouselModal() {

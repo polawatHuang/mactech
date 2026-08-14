@@ -6,9 +6,9 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
 } from "@heroicons/react/24/outline";
-import WhiteWallImg from "../public/images/wall-white.png";
-import GreenWallImg from "../public/images/wall-green.png";
-import BlackWallImg from "../public/images/wall-black.png";
+import GalvanizedFence01 from "../public/products/แผงรั้วสำเร็จรูปกัลวาไนซ์/01.jpg";
+import BlackPeFence01 from "../public/products/แผงรั้วสำเร็จรูปชุบ PE สีดำ/01.jpg";
+import GreenPeFence01 from "../public/products/แผงรั้วสำเร็จรูปชุบ PE สีเขียว/01.jpg";
 import StainlessMeshImg from "../public/products/ตาข่ายกรงไก่สแตนเลส.jpg";
 import ColdGalvanizedMeshImg from "../public/products/ตาข่ายกรงไก่ชุบเย็น.jpg";
 import HotGalvanizedMeshImg from "../public/products/ตาข่ายกรงไก่ชุบร้อน.jpg";
@@ -25,17 +25,17 @@ import Image from "next/image";
 const products = [
   {
     title: "แผงรั้วกัลวาไนซ์",
-    image: WhiteWallImg,
+    image: GalvanizedFence01,
     href: "/products/galvanized-fence",
   },
   {
     title: "แผงรั้ว เคลือบสีดำ",
-    image: BlackWallImg,
+    image: BlackPeFence01,
     href: "/products/black-pe-fence",
   },
   {
     title: "แผงรั้ว เคลือบสีเขียว",
-    image: GreenWallImg,
+    image: GreenPeFence01,
     href: "/products/green-pe-fence",
   },
   {

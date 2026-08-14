@@ -1,12 +1,9 @@
-import WhiteWall from "@/public/images/wall-white.png";
-import BlackWall from "@/public/images/wall-black.png";
-import GreenWall from "@/public/images/wall-green.png";
-
-import Store1 from "@/public/images/f1.png";
-import Store2 from "@/public/images/f2.png";
-import Store3 from "@/public/images/f3.png";
-import Store4 from "@/public/images/f4.png";
-import Store5 from "@/public/images/f5.png";
+import GalvanizedFence01 from "@/public/products/แผงรั้วสำเร็จรูปกัลวาไนซ์/01.jpg";
+import GalvanizedFence02 from "@/public/products/แผงรั้วสำเร็จรูปกัลวาไนซ์/02.jpg";
+import BlackPeFence01 from "@/public/products/แผงรั้วสำเร็จรูปชุบ PE สีดำ/01.jpg";
+import BlackPeFence02 from "@/public/products/แผงรั้วสำเร็จรูปชุบ PE สีดำ/02.jpg";
+import GreenPeFence01 from "@/public/products/แผงรั้วสำเร็จรูปชุบ PE สีเขียว/01.jpg";
+import GreenPeFence02 from "@/public/products/แผงรั้วสำเร็จรูปชุบ PE สีเขียว/02.jpg";
 
 import FenceSize1 from "@/public/images/FenceSize1.png";
 import FenceSize2 from "@/public/images/FenceSize2.png";
@@ -56,12 +53,11 @@ export const products = [
 
     currency: "THB",
 
-    coverImage: WhiteWall,
+    coverImage: GalvanizedFence01,
 
     gallery: [
-      WhiteWall,
-      Store1,
-      Store3,
+      GalvanizedFence01,
+      GalvanizedFence02,
     ],
 
     sizes: [
@@ -193,12 +189,11 @@ export const products = [
 
     currency: "THB",
 
-    coverImage: BlackWall,
+    coverImage: BlackPeFence01,
 
     gallery: [
-      BlackWall,
-      Store2,
-      Store4,
+      BlackPeFence01,
+      BlackPeFence02,
     ],
 
     sizes: [
@@ -328,12 +323,11 @@ export const products = [
 
     currency: "THB",
 
-    coverImage: GreenWall,
+    coverImage: GreenPeFence01,
 
     gallery: [
-      GreenWall,
-      Store2,
-      Store5,
+      GreenPeFence01,
+      GreenPeFence02,
     ],
 
     sizes: [
