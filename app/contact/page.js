@@ -223,7 +223,7 @@ function ContactItem({ icon, title, value }) {
       </div>
       <div>
         <p className="text-white/70">{title}</p>
-        <p className="mt-1 text-xl font-extrabold text-[#d4a63c]">{value}</p>
+        <p className="mt-1 text-md font-extrabold text-[#d4a63c]">{value}</p>
       </div>
     </div>
   );
