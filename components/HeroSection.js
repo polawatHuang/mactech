@@ -65,7 +65,7 @@ export default function HeroSection() {
 
             {/* Description */}
             <p className="mb-10 max-w-[520px] text-[15px] leading-relaxed text-white/78 sm:text-[17px] lg:text-[20px]">
-              ครบครัน ตอบโจทย์ทุกการใช้งาน สวย แข็งแรง ทนทานต่อการใช้งานในระยะยาว
+              ครบครันทุกงานรั้ว ตอบโจทย์งานโครงการ โรงเรือน และงานติดตั้งรั้วทั้วไป สวยงาม แข็งแรง ทนทาน ใช้งานได้ในระยะยาว
             </p>
 
             {/* Features */}
