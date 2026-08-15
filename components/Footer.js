@@ -75,7 +75,7 @@ export default function Footer() {
                 <span className="flex h-5 w-5 text-[5px] items-center justify-center rounded bg-[#00c300] font-black text-white">
                   LINE
                 </span>
-                @mtthailand
+                mt.thailand
                 </a>
               </div>
 

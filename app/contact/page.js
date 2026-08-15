@@ -112,7 +112,7 @@ export default function ContactPage() {
                 </span>
               }
               title="LINE"
-              value="@mtthailand"
+              value="mt.thailand"
             />
             <ContactItem icon={<EnvelopeIcon />} title="อีเมล" value="mactech.thailand@gmail.com" />
             <ContactItem icon={<MapPinIcon />} title="ที่อยู่บริษัท" value="219/2 หมู่ 12 ตำบลกระสัง อำเภอเมืองบุรีรัมย์ จังหวัดบุรีรัมย์ 31000" />
