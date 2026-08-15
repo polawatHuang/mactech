@@ -292,7 +292,7 @@ export default function ConsultingPage() {
               </div>
 
               <a
-                href="https://line.me/R/ti/p/@930qheef"
+                href="https://line.me/R/ti/p/@mt.thailand"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-16 items-center justify-center gap-3 border border-[#d4a63c]/60 bg-black/40 text-lg font-bold"
@@ -300,7 +300,7 @@ export default function ConsultingPage() {
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d4a63c] text-xs font-black text-black">
                   LINE
                 </span>
-                mt.thailand
+                @mt.thailand
               </a>
             </div>
           </div>

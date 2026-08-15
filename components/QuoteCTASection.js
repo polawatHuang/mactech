@@ -113,7 +113,7 @@ export default function QuoteCTASection() {
                 </Link>
 
                 <a
-                  href="https://line.me/R/ti/p/@930qheef"
+                  href="https://line.me/R/ti/p/@mt.thailand"
                   target="_blank"
                   rel="noreferrer"
                   className="flex h-12 items-center justify-center gap-2 border border-white/45 px-8 text-sm font-bold text-white transition hover:border-[#d4a63c] hover:text-[#d4a63c]"

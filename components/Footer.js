@@ -71,11 +71,11 @@ export default function Footer() {
               </a>
 
               <div className="flex items-center gap-3">
-                <a href="https://line.me/R/ti/p/@930qheef" target="_blank" rel="noreferrer" className="flex items-center gap-3">
+                <a href="https://line.me/R/ti/p/@mt.thailand" target="_blank" rel="noreferrer" className="flex items-center gap-3">
                 <span className="flex h-5 w-5 text-[5px] items-center justify-center rounded bg-[#00c300] font-black text-white">
                   LINE
                 </span>
-                mt.thailand
+                @mt.thailand
                 </a>
               </div>
 
