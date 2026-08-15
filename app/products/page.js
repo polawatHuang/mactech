@@ -196,11 +196,11 @@ export default function ProductsPage() {
                 href={`/products/${item.slug}`}
                 className="group overflow-hidden border border-white/10 bg-[#0b0b0b] transition duration-300 hover:-translate-y-1 hover:border-[#d4a63c]/60"
               >
-                <div className="aspect-[4/3] overflow-hidden bg-black">
+                <div className="overflow-hidden bg-black">
                   <Image
                     src={item.coverImage}
                     alt={item.title}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    className="h-auto w-full transition duration-500 group-hover:scale-105"
                     width={500}
                     height={500}
                   />
