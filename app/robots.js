@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://mactechfence.vercel.app/sitemap.xml",
+    sitemap: "https://www.mactechthailand.com/sitemap.xml",
   };
 }

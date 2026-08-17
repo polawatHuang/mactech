@@ -1,6 +1,6 @@
 import "./globals.css";
 
-const siteUrl = "https://mactechfence.vercel.app";
+const siteUrl = "https://www.mactechthailand.com";
 const title = "MACTECH - แผงรั้วเหล็ก ตาข่ายกรงไก่ ลวดหนาม สำเร็จรูปคุณภาพสูง";
 const description =
   "MACTECH จำหน่ายแผงรั้วเหล็กสำเร็จรูป ตาข่ายกรงไก่ และลวดหนามคุณภาพสูง เหมาะสำหรับบ้านและโครงการต่างๆ ด้วยดีไซน์ทันสมัยและทนทานต่อสภาพอากาศ เลือกสินค้าที่เหมาะกับความต้องการของคุณได้ที่นี่";

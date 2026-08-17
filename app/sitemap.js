@@ -1,6 +1,6 @@
 import { products } from "@/mock/products";
 
-const siteUrl = "https://mactechfence.vercel.app";
+const siteUrl = "https://www.mactechthailand.com";
 
 export default function sitemap() {
   const staticRoutes = [
